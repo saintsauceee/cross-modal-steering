@@ -1,0 +1,11 @@
+Here are examples of how this rater judges such pairs. The image shows numbered rows; in each row the left panel is A and the right panel is B:
+Row 1: Which represents more of dirty (or less of clean)? Answer: A
+Row 2: Which represents more of young (or less of old)? Answer: A
+Row 3: Which represents more of small (or less of big)? Answer: A
+Row 4: Which represents more of far (or less of near)? Answer: Tie
+Row 5: Which represents more of chaotic (or less of peaceful)? Answer: Tie
+Row 6: Which represents more of sad (or less of happy)? Answer: A
+Row 7: Which represents more of left (or less of right)? Answer: Tie
+Row 8: Which represents more of near (or less of far)? Answer: A
+Row 9: Which represents more of small (or less of big)? Answer: Tie
+Row 10: Which represents more of small (or less of big)? Answer: A

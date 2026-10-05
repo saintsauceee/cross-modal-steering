@@ -1,0 +1,815 @@
+{
+  "concept": "color",
+  "pos_label": "red",
+  "neg_label": "blue",
+  "template": "{art} {subject} is {color}",
+  "template_people": "{art} {subject} is dressed in {color}",
+  "n_pairs": 100,
+  "n_people": 15,
+  "pairs": [
+    {
+      "subject": "shirt",
+      "kind": "thing",
+      "pos": "a shirt is red",
+      "neg": "a shirt is blue"
+    },
+    {
+      "subject": "dress",
+      "kind": "thing",
+      "pos": "a dress is red",
+      "neg": "a dress is blue"
+    },
+    {
+      "subject": "jacket",
+      "kind": "thing",
+      "pos": "a jacket is red",
+      "neg": "a jacket is blue"
+    },
+    {
+      "subject": "coat",
+      "kind": "thing",
+      "pos": "a coat is red",
+      "neg": "a coat is blue"
+    },
+    {
+      "subject": "sweater",
+      "kind": "thing",
+      "pos": "a sweater is red",
+      "neg": "a sweater is blue"
+    },
+    {
+      "subject": "scarf",
+      "kind": "thing",
+      "pos": "a scarf is red",
+      "neg": "a scarf is blue"
+    },
+    {
+      "subject": "hat",
+      "kind": "thing",
+      "pos": "a hat is red",
+      "neg": "a hat is blue"
+    },
+    {
+      "subject": "cap",
+      "kind": "thing",
+      "pos": "a cap is red",
+      "neg": "a cap is blue"
+    },
+    {
+      "subject": "glove",
+      "kind": "thing",
+      "pos": "a glove is red",
+      "neg": "a glove is blue"
+    },
+    {
+      "subject": "sock",
+      "kind": "thing",
+      "pos": "a sock is red",
+      "neg": "a sock is blue"
+    },
+    {
+      "subject": "shoe",
+      "kind": "thing",
+      "pos": "a shoe is red",
+      "neg": "a shoe is blue"
+    },
+    {
+      "subject": "boot",
+      "kind": "thing",
+      "pos": "a boot is red",
+      "neg": "a boot is blue"
+    },
+    {
+      "subject": "skirt",
+      "kind": "thing",
+      "pos": "a skirt is red",
+      "neg": "a skirt is blue"
+    },
+    {
+      "subject": "tie",
+      "kind": "thing",
+      "pos": "a tie is red",
+      "neg": "a tie is blue"
+    },
+    {
+      "subject": "apron",
+      "kind": "thing",
+      "pos": "an apron is red",
+      "neg": "an apron is blue"
+    },
+    {
+      "subject": "uniform",
+      "kind": "thing",
+      "pos": "an uniform is red",
+      "neg": "an uniform is blue"
+    },
+    {
+      "subject": "jersey",
+      "kind": "thing",
+      "pos": "a jersey is red",
+      "neg": "a jersey is blue"
+    },
+    {
+      "subject": "hoodie",
+      "kind": "thing",
+      "pos": "a hoodie is red",
+      "neg": "a hoodie is blue"
+    },
+    {
+      "subject": "raincoat",
+      "kind": "thing",
+      "pos": "a raincoat is red",
+      "neg": "a raincoat is blue"
+    },
+    {
+      "subject": "swimsuit",
+      "kind": "thing",
+      "pos": "a swimsuit is red",
+      "neg": "a swimsuit is blue"
+    },
+    {
+      "subject": "backpack",
+      "kind": "thing",
+      "pos": "a backpack is red",
+      "neg": "a backpack is blue"
+    },
+    {
+      "subject": "handbag",
+      "kind": "thing",
+      "pos": "a handbag is red",
+      "neg": "a handbag is blue"
+    },
+    {
+      "subject": "wallet",
+      "kind": "thing",
+      "pos": "a wallet is red",
+      "neg": "a wallet is blue"
+    },
+    {
+      "subject": "belt",
+      "kind": "thing",
+      "pos": "a belt is red",
+      "neg": "a belt is blue"
+    },
+    {
+      "subject": "umbrella",
+      "kind": "thing",
+      "pos": "an umbrella is red",
+      "neg": "an umbrella is blue"
+    },
+    {
+      "subject": "towel",
+      "kind": "thing",
+      "pos": "a towel is red",
+      "neg": "a towel is blue"
+    },
+    {
+      "subject": "blanket",
+      "kind": "thing",
+      "pos": "a blanket is red",
+      "neg": "a blanket is blue"
+    },
+    {
+      "subject": "pillow",
+      "kind": "thing",
+      "pos": "a pillow is red",
+      "neg": "a pillow is blue"
+    },
+    {
+      "subject": "curtain",
+      "kind": "thing",
+      "pos": "a curtain is red",
+      "neg": "a curtain is blue"
+    },
+    {
+      "subject": "rug",
+      "kind": "thing",
+      "pos": "a rug is red",
+      "neg": "a rug is blue"
+    },
+    {
+      "subject": "carpet",
+      "kind": "thing",
+      "pos": "a carpet is red",
+      "neg": "a carpet is blue"
+    },
+    {
+      "subject": "tablecloth",
+      "kind": "thing",
+      "pos": "a tablecloth is red",
+      "neg": "a tablecloth is blue"
+    },
+    {
+      "subject": "napkin",
+      "kind": "thing",
+      "pos": "a napkin is red",
+      "neg": "a napkin is blue"
+    },
+    {
+      "subject": "cushion",
+      "kind": "thing",
+      "pos": "a cushion is red",
+      "neg": "a cushion is blue"
+    },
+    {
+      "subject": "quilt",
+      "kind": "thing",
+      "pos": "a quilt is red",
+      "neg": "a quilt is blue"
+    },
+    {
+      "subject": "bedsheet",
+      "kind": "thing",
+      "pos": "a bedsheet is red",
+      "neg": "a bedsheet is blue"
+    },
+    {
+      "subject": "ribbon",
+      "kind": "thing",
+      "pos": "a ribbon is red",
+      "neg": "a ribbon is blue"
+    },
+    {
+      "subject": "banner",
+      "kind": "thing",
+      "pos": "a banner is red",
+      "neg": "a banner is blue"
+    },
+    {
+      "subject": "flag",
+      "kind": "thing",
+      "pos": "a flag is red",
+      "neg": "a flag is blue"
+    },
+    {
+      "subject": "tent",
+      "kind": "thing",
+      "pos": "a tent is red",
+      "neg": "a tent is blue"
+    },
+    {
+      "subject": "car",
+      "kind": "thing",
+      "pos": "a car is red",
+      "neg": "a car is blue"
+    },
+    {
+      "subject": "truck",
+      "kind": "thing",
+      "pos": "a truck is red",
+      "neg": "a truck is blue"
+    },
+    {
+      "subject": "van",
+      "kind": "thing",
+      "pos": "a van is red",
+      "neg": "a van is blue"
+    },
+    {
+      "subject": "bus",
+      "kind": "thing",
+      "pos": "a bus is red",
+      "neg": "a bus is blue"
+    },
+    {
+      "subject": "bicycle",
+      "kind": "thing",
+      "pos": "a bicycle is red",
+      "neg": "a bicycle is blue"
+    },
+    {
+      "subject": "motorcycle",
+      "kind": "thing",
+      "pos": "a motorcycle is red",
+      "neg": "a motorcycle is blue"
+    },
+    {
+      "subject": "scooter",
+      "kind": "thing",
+      "pos": "a scooter is red",
+      "neg": "a scooter is blue"
+    },
+    {
+      "subject": "tractor",
+      "kind": "thing",
+      "pos": "a tractor is red",
+      "neg": "a tractor is blue"
+    },
+    {
+      "subject": "boat",
+      "kind": "thing",
+      "pos": "a boat is red",
+      "neg": "a boat is blue"
+    },
+    {
+      "subject": "kayak",
+      "kind": "thing",
+      "pos": "a kayak is red",
+      "neg": "a kayak is blue"
+    },
+    {
+      "subject": "canoe",
+      "kind": "thing",
+      "pos": "a canoe is red",
+      "neg": "a canoe is blue"
+    },
+    {
+      "subject": "sled",
+      "kind": "thing",
+      "pos": "a sled is red",
+      "neg": "a sled is blue"
+    },
+    {
+      "subject": "wagon",
+      "kind": "thing",
+      "pos": "a wagon is red",
+      "neg": "a wagon is blue"
+    },
+    {
+      "subject": "cart",
+      "kind": "thing",
+      "pos": "a cart is red",
+      "neg": "a cart is blue"
+    },
+    {
+      "subject": "skateboard",
+      "kind": "thing",
+      "pos": "a skateboard is red",
+      "neg": "a skateboard is blue"
+    },
+    {
+      "subject": "surfboard",
+      "kind": "thing",
+      "pos": "a surfboard is red",
+      "neg": "a surfboard is blue"
+    },
+    {
+      "subject": "helmet",
+      "kind": "thing",
+      "pos": "a helmet is red",
+      "neg": "a helmet is blue"
+    },
+    {
+      "subject": "door",
+      "kind": "thing",
+      "pos": "a door is red",
+      "neg": "a door is blue"
+    },
+    {
+      "subject": "gate",
+      "kind": "thing",
+      "pos": "a gate is red",
+      "neg": "a gate is blue"
+    },
+    {
+      "subject": "fence",
+      "kind": "thing",
+      "pos": "a fence is red",
+      "neg": "a fence is blue"
+    },
+    {
+      "subject": "mailbox",
+      "kind": "thing",
+      "pos": "a mailbox is red",
+      "neg": "a mailbox is blue"
+    },
+    {
+      "subject": "shutter",
+      "kind": "thing",
+      "pos": "a shutter is red",
+      "neg": "a shutter is blue"
+    },
+    {
+      "subject": "railing",
+      "kind": "thing",
+      "pos": "a railing is red",
+      "neg": "a railing is blue"
+    },
+    {
+      "subject": "bench",
+      "kind": "thing",
+      "pos": "a bench is red",
+      "neg": "a bench is blue"
+    },
+    {
+      "subject": "birdhouse",
+      "kind": "thing",
+      "pos": "a birdhouse is red",
+      "neg": "a birdhouse is blue"
+    },
+    {
+      "subject": "shed",
+      "kind": "thing",
+      "pos": "a shed is red",
+      "neg": "a shed is blue"
+    },
+    {
+      "subject": "wall",
+      "kind": "thing",
+      "pos": "a wall is red",
+      "neg": "a wall is blue"
+    },
+    {
+      "subject": "roof",
+      "kind": "thing",
+      "pos": "a roof is red",
+      "neg": "a roof is blue"
+    },
+    {
+      "subject": "barrel",
+      "kind": "thing",
+      "pos": "a barrel is red",
+      "neg": "a barrel is blue"
+    },
+    {
+      "subject": "crate",
+      "kind": "thing",
+      "pos": "a crate is red",
+      "neg": "a crate is blue"
+    },
+    {
+      "subject": "mug",
+      "kind": "thing",
+      "pos": "a mug is red",
+      "neg": "a mug is blue"
+    },
+    {
+      "subject": "cup",
+      "kind": "thing",
+      "pos": "a cup is red",
+      "neg": "a cup is blue"
+    },
+    {
+      "subject": "bowl",
+      "kind": "thing",
+      "pos": "a bowl is red",
+      "neg": "a bowl is blue"
+    },
+    {
+      "subject": "plate",
+      "kind": "thing",
+      "pos": "a plate is red",
+      "neg": "a plate is blue"
+    },
+    {
+      "subject": "kettle",
+      "kind": "thing",
+      "pos": "a kettle is red",
+      "neg": "a kettle is blue"
+    },
+    {
+      "subject": "teapot",
+      "kind": "thing",
+      "pos": "a teapot is red",
+      "neg": "a teapot is blue"
+    },
+    {
+      "subject": "bucket",
+      "kind": "thing",
+      "pos": "a bucket is red",
+      "neg": "a bucket is blue"
+    },
+    {
+      "subject": "basket",
+      "kind": "thing",
+      "pos": "a basket is red",
+      "neg": "a basket is blue"
+    },
+    {
+      "subject": "vase",
+      "kind": "thing",
+      "pos": "a vase is red",
+      "neg": "a vase is blue"
+    },
+    {
+      "subject": "lamp",
+      "kind": "thing",
+      "pos": "a lamp is red",
+      "neg": "a lamp is blue"
+    },
+    {
+      "subject": "lampshade",
+      "kind": "thing",
+      "pos": "a lampshade is red",
+      "neg": "a lampshade is blue"
+    },
+    {
+      "subject": "chair",
+      "kind": "thing",
+      "pos": "a chair is red",
+      "neg": "a chair is blue"
+    },
+    {
+      "subject": "sofa",
+      "kind": "thing",
+      "pos": "a sofa is red",
+      "neg": "a sofa is blue"
+    },
+    {
+      "subject": "stool",
+      "kind": "thing",
+      "pos": "a stool is red",
+      "neg": "a stool is blue"
+    },
+    {
+      "subject": "cabinet",
+      "kind": "thing",
+      "pos": "a cabinet is red",
+      "neg": "a cabinet is blue"
+    },
+    {
+      "subject": "person",
+      "kind": "person",
+      "pos": "a person is dressed in red",
+      "neg": "a person is dressed in blue"
+    },
+    {
+      "subject": "man",
+      "kind": "person",
+      "pos": "a man is dressed in red",
+      "neg": "a man is dressed in blue"
+    },
+    {
+      "subject": "woman",
+      "kind": "person",
+      "pos": "a woman is dressed in red",
+      "neg": "a woman is dressed in blue"
+    },
+    {
+      "subject": "child",
+      "kind": "person",
+      "pos": "a child is dressed in red",
+      "neg": "a child is dressed in blue"
+    },
+    {
+      "subject": "teenager",
+      "kind": "person",
+      "pos": "a teenager is dressed in red",
+      "neg": "a teenager is dressed in blue"
+    },
+    {
+      "subject": "cyclist",
+      "kind": "person",
+      "pos": "a cyclist is dressed in red",
+      "neg": "a cyclist is dressed in blue"
+    },
+    {
+      "subject": "runner",
+      "kind": "person",
+      "pos": "a runner is dressed in red",
+      "neg": "a runner is dressed in blue"
+    },
+    {
+      "subject": "dancer",
+      "kind": "person",
+      "pos": "a dancer is dressed in red",
+      "neg": "a dancer is dressed in blue"
+    },
+    {
+      "subject": "singer",
+      "kind": "person",
+      "pos": "a singer is dressed in red",
+      "neg": "a singer is dressed in blue"
+    },
+    {
+      "subject": "student",
+      "kind": "person",
+      "pos": "a student is dressed in red",
+      "neg": "a student is dressed in blue"
+    },
+    {
+      "subject": "tourist",
+      "kind": "person",
+      "pos": "a tourist is dressed in red",
+      "neg": "a tourist is dressed in blue"
+    },
+    {
+      "subject": "passenger",
+      "kind": "person",
+      "pos": "a passenger is dressed in red",
+      "neg": "a passenger is dressed in blue"
+    },
+    {
+      "subject": "neighbor",
+      "kind": "person",
+      "pos": "a neighbor is dressed in red",
+      "neg": "a neighbor is dressed in blue"
+    },
+    {
+      "subject": "guest",
+      "kind": "person",
+      "pos": "a guest is dressed in red",
+      "neg": "a guest is dressed in blue"
+    },
+    {
+      "subject": "athlete",
+      "kind": "person",
+      "pos": "an athlete is dressed in red",
+      "neg": "an athlete is dressed in blue"
+    }
+  ],
+  "pos": [
+    "a shirt is red",
+    "a dress is red",
+    "a jacket is red",
+    "a coat is red",
+    "a sweater is red",
+    "a scarf is red",
+    "a hat is red",
+    "a cap is red",
+    "a glove is red",
+    "a sock is red",
+    "a shoe is red",
+    "a boot is red",
+    "a skirt is red",
+    "a tie is red",
+    "an apron is red",
+    "an uniform is red",
+    "a jersey is red",
+    "a hoodie is red",
+    "a raincoat is red",
+    "a swimsuit is red",
+    "a backpack is red",
+    "a handbag is red",
+    "a wallet is red",
+    "a belt is red",
+    "an umbrella is red",
+    "a towel is red",
+    "a blanket is red",
+    "a pillow is red",
+    "a curtain is red",
+    "a rug is red",
+    "a carpet is red",
+    "a tablecloth is red",
+    "a napkin is red",
+    "a cushion is red",
+    "a quilt is red",
+    "a bedsheet is red",
+    "a ribbon is red",
+    "a banner is red",
+    "a flag is red",
+    "a tent is red",
+    "a car is red",
+    "a truck is red",
+    "a van is red",
+    "a bus is red",
+    "a bicycle is red",
+    "a motorcycle is red",
+    "a scooter is red",
+    "a tractor is red",
+    "a boat is red",
+    "a kayak is red",
+    "a canoe is red",
+    "a sled is red",
+    "a wagon is red",
+    "a cart is red",
+    "a skateboard is red",
+    "a surfboard is red",
+    "a helmet is red",
+    "a door is red",
+    "a gate is red",
+    "a fence is red",
+    "a mailbox is red",
+    "a shutter is red",
+    "a railing is red",
+    "a bench is red",
+    "a birdhouse is red",
+    "a shed is red",
+    "a wall is red",
+    "a roof is red",
+    "a barrel is red",
+    "a crate is red",
+    "a mug is red",
+    "a cup is red",
+    "a bowl is red",
+    "a plate is red",
+    "a kettle is red",
+    "a teapot is red",
+    "a bucket is red",
+    "a basket is red",
+    "a vase is red",
+    "a lamp is red",
+    "a lampshade is red",
+    "a chair is red",
+    "a sofa is red",
+    "a stool is red",
+    "a cabinet is red",
+    "a person is dressed in red",
+    "a man is dressed in red",
+    "a woman is dressed in red",
+    "a child is dressed in red",
+    "a teenager is dressed in red",
+    "a cyclist is dressed in red",
+    "a runner is dressed in red",
+    "a dancer is dressed in red",
+    "a singer is dressed in red",
+    "a student is dressed in red",
+    "a tourist is dressed in red",
+    "a passenger is dressed in red",
+    "a neighbor is dressed in red",
+    "a guest is dressed in red",
+    "an athlete is dressed in red"
+  ],
+  "neg": [
+    "a shirt is blue",
+    "a dress is blue",
+    "a jacket is blue",
+    "a coat is blue",
+    "a sweater is blue",
+    "a scarf is blue",
+    "a hat is blue",
+    "a cap is blue",
+    "a glove is blue",
+    "a sock is blue",
+    "a shoe is blue",
+    "a boot is blue",
+    "a skirt is blue",
+    "a tie is blue",
+    "an apron is blue",
+    "an uniform is blue",
+    "a jersey is blue",
+    "a hoodie is blue",
+    "a raincoat is blue",
+    "a swimsuit is blue",
+    "a backpack is blue",
+    "a handbag is blue",
+    "a wallet is blue",
+    "a belt is blue",
+    "an umbrella is blue",
+    "a towel is blue",
+    "a blanket is blue",
+    "a pillow is blue",
+    "a curtain is blue",
+    "a rug is blue",
+    "a carpet is blue",
+    "a tablecloth is blue",
+    "a napkin is blue",
+    "a cushion is blue",
+    "a quilt is blue",
+    "a bedsheet is blue",
+    "a ribbon is blue",
+    "a banner is blue",
+    "a flag is blue",
+    "a tent is blue",
+    "a car is blue",
+    "a truck is blue",
+    "a van is blue",
+    "a bus is blue",
+    "a bicycle is blue",
+    "a motorcycle is blue",
+    "a scooter is blue",
+    "a tractor is blue",
+    "a boat is blue",
+    "a kayak is blue",
+    "a canoe is blue",
+    "a sled is blue",
+    "a wagon is blue",
+    "a cart is blue",
+    "a skateboard is blue",
+    "a surfboard is blue",
+    "a helmet is blue",
+    "a door is blue",
+    "a gate is blue",
+    "a fence is blue",
+    "a mailbox is blue",
+    "a shutter is blue",
+    "a railing is blue",
+    "a bench is blue",
+    "a birdhouse is blue",
+    "a shed is blue",
+    "a wall is blue",
+    "a roof is blue",
+    "a barrel is blue",
+    "a crate is blue",
+    "a mug is blue",
+    "a cup is blue",
+    "a bowl is blue",
+    "a plate is blue",
+    "a kettle is blue",
+    "a teapot is blue",
+    "a bucket is blue",
+    "a basket is blue",
+    "a vase is blue",
+    "a lamp is blue",
+    "a lampshade is blue",
+    "a chair is blue",
+    "a sofa is blue",
+    "a stool is blue",
+    "a cabinet is blue",
+    "a person is dressed in blue",
+    "a man is dressed in blue",
+    "a woman is dressed in blue",
+    "a child is dressed in blue",
+    "a teenager is dressed in blue",
+    "a cyclist is dressed in blue",
+    "a runner is dressed in blue",
+    "a dancer is dressed in blue",
+    "a singer is dressed in blue",
+    "a student is dressed in blue",
+    "a tourist is dressed in blue",
+    "a passenger is dressed in blue",
+    "a neighbor is dressed in blue",
+    "a guest is dressed in blue",
+    "an athlete is dressed in blue"
+  ]
+}

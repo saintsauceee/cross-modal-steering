@@ -1,0 +1,53 @@
+[project]
+name = "cmsteer"
+version = "0.1.0"
+description = "Cross-modal steering vectors for unified multimodal models (text <-> image)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "torch>=2.3",
+    "numpy>=2.0",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "pyyaml>=6.0",
+    "pillow>=10.0",
+    "huggingface_hub>=0.24",
+    "tabulate",
+]
+
+[project.optional-dependencies]
+# The concept-rate judge (Gemini).
+judge = ["google-genai>=1.0"]
+# Model backends. The three models need different transformers versions, so install each in its own
+# environment (see README "Environments").
+uniar = ["transformers==4.57.0", "accelerate", "diffusers", "qwen-vl-utils"]
+liquid = ["transformers==4.46.0", "accelerate", "omegaconf", "einops"]
+emu35 = ["transformers==4.48.2", "accelerate", "einops", "omegaconf", "tiktoken", "sentencepiece"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+cmsteer = "cmsteer.cli:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cmsteer = ["data/**/*", "models/_vendor/**/*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["src/cmsteer/models/_vendor"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E731"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

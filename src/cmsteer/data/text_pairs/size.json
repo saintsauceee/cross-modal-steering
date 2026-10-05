@@ -1,0 +1,713 @@
+{
+  "concept": "size",
+  "pos_label": "large",
+  "neg_label": "small",
+  "template": "{art} {subject} is {size}",
+  "n_pairs": 100,
+  "pairs": [
+    {
+      "subject": "ball",
+      "pos": "a ball is large",
+      "neg": "a ball is small"
+    },
+    {
+      "subject": "box",
+      "pos": "a box is large",
+      "neg": "a box is small"
+    },
+    {
+      "subject": "book",
+      "pos": "a book is large",
+      "neg": "a book is small"
+    },
+    {
+      "subject": "cup",
+      "pos": "a cup is large",
+      "neg": "a cup is small"
+    },
+    {
+      "subject": "chair",
+      "pos": "a chair is large",
+      "neg": "a chair is small"
+    },
+    {
+      "subject": "table",
+      "pos": "a table is large",
+      "neg": "a table is small"
+    },
+    {
+      "subject": "lamp",
+      "pos": "a lamp is large",
+      "neg": "a lamp is small"
+    },
+    {
+      "subject": "bottle",
+      "pos": "a bottle is large",
+      "neg": "a bottle is small"
+    },
+    {
+      "subject": "clock",
+      "pos": "a clock is large",
+      "neg": "a clock is small"
+    },
+    {
+      "subject": "phone",
+      "pos": "a phone is large",
+      "neg": "a phone is small"
+    },
+    {
+      "subject": "car",
+      "pos": "a car is large",
+      "neg": "a car is small"
+    },
+    {
+      "subject": "truck",
+      "pos": "a truck is large",
+      "neg": "a truck is small"
+    },
+    {
+      "subject": "bicycle",
+      "pos": "a bicycle is large",
+      "neg": "a bicycle is small"
+    },
+    {
+      "subject": "boat",
+      "pos": "a boat is large",
+      "neg": "a boat is small"
+    },
+    {
+      "subject": "house",
+      "pos": "a house is large",
+      "neg": "a house is small"
+    },
+    {
+      "subject": "tree",
+      "pos": "a tree is large",
+      "neg": "a tree is small"
+    },
+    {
+      "subject": "rock",
+      "pos": "a rock is large",
+      "neg": "a rock is small"
+    },
+    {
+      "subject": "flower",
+      "pos": "a flower is large",
+      "neg": "a flower is small"
+    },
+    {
+      "subject": "plate",
+      "pos": "a plate is large",
+      "neg": "a plate is small"
+    },
+    {
+      "subject": "bowl",
+      "pos": "a bowl is large",
+      "neg": "a bowl is small"
+    },
+    {
+      "subject": "knife",
+      "pos": "a knife is large",
+      "neg": "a knife is small"
+    },
+    {
+      "subject": "spoon",
+      "pos": "a spoon is large",
+      "neg": "a spoon is small"
+    },
+    {
+      "subject": "fork",
+      "pos": "a fork is large",
+      "neg": "a fork is small"
+    },
+    {
+      "subject": "pillow",
+      "pos": "a pillow is large",
+      "neg": "a pillow is small"
+    },
+    {
+      "subject": "blanket",
+      "pos": "a blanket is large",
+      "neg": "a blanket is small"
+    },
+    {
+      "subject": "mirror",
+      "pos": "a mirror is large",
+      "neg": "a mirror is small"
+    },
+    {
+      "subject": "painting",
+      "pos": "a painting is large",
+      "neg": "a painting is small"
+    },
+    {
+      "subject": "vase",
+      "pos": "a vase is large",
+      "neg": "a vase is small"
+    },
+    {
+      "subject": "candle",
+      "pos": "a candle is large",
+      "neg": "a candle is small"
+    },
+    {
+      "subject": "basket",
+      "pos": "a basket is large",
+      "neg": "a basket is small"
+    },
+    {
+      "subject": "bucket",
+      "pos": "a bucket is large",
+      "neg": "a bucket is small"
+    },
+    {
+      "subject": "ladder",
+      "pos": "a ladder is large",
+      "neg": "a ladder is small"
+    },
+    {
+      "subject": "hammer",
+      "pos": "a hammer is large",
+      "neg": "a hammer is small"
+    },
+    {
+      "subject": "umbrella",
+      "pos": "an umbrella is large",
+      "neg": "an umbrella is small"
+    },
+    {
+      "subject": "backpack",
+      "pos": "a backpack is large",
+      "neg": "a backpack is small"
+    },
+    {
+      "subject": "suitcase",
+      "pos": "a suitcase is large",
+      "neg": "a suitcase is small"
+    },
+    {
+      "subject": "hat",
+      "pos": "a hat is large",
+      "neg": "a hat is small"
+    },
+    {
+      "subject": "shoe",
+      "pos": "a shoe is large",
+      "neg": "a shoe is small"
+    },
+    {
+      "subject": "glove",
+      "pos": "a glove is large",
+      "neg": "a glove is small"
+    },
+    {
+      "subject": "watch",
+      "pos": "a watch is large",
+      "neg": "a watch is small"
+    },
+    {
+      "subject": "ring",
+      "pos": "a ring is large",
+      "neg": "a ring is small"
+    },
+    {
+      "subject": "key",
+      "pos": "a key is large",
+      "neg": "a key is small"
+    },
+    {
+      "subject": "coin",
+      "pos": "a coin is large",
+      "neg": "a coin is small"
+    },
+    {
+      "subject": "pen",
+      "pos": "a pen is large",
+      "neg": "a pen is small"
+    },
+    {
+      "subject": "pencil",
+      "pos": "a pencil is large",
+      "neg": "a pencil is small"
+    },
+    {
+      "subject": "brush",
+      "pos": "a brush is large",
+      "neg": "a brush is small"
+    },
+    {
+      "subject": "comb",
+      "pos": "a comb is large",
+      "neg": "a comb is small"
+    },
+    {
+      "subject": "mug",
+      "pos": "a mug is large",
+      "neg": "a mug is small"
+    },
+    {
+      "subject": "kettle",
+      "pos": "a kettle is large",
+      "neg": "a kettle is small"
+    },
+    {
+      "subject": "pan",
+      "pos": "a pan is large",
+      "neg": "a pan is small"
+    },
+    {
+      "subject": "pot",
+      "pos": "a pot is large",
+      "neg": "a pot is small"
+    },
+    {
+      "subject": "jar",
+      "pos": "a jar is large",
+      "neg": "a jar is small"
+    },
+    {
+      "subject": "can",
+      "pos": "a can is large",
+      "neg": "a can is small"
+    },
+    {
+      "subject": "barrel",
+      "pos": "a barrel is large",
+      "neg": "a barrel is small"
+    },
+    {
+      "subject": "crate",
+      "pos": "a crate is large",
+      "neg": "a crate is small"
+    },
+    {
+      "subject": "drum",
+      "pos": "a drum is large",
+      "neg": "a drum is small"
+    },
+    {
+      "subject": "guitar",
+      "pos": "a guitar is large",
+      "neg": "a guitar is small"
+    },
+    {
+      "subject": "piano",
+      "pos": "a piano is large",
+      "neg": "a piano is small"
+    },
+    {
+      "subject": "violin",
+      "pos": "a violin is large",
+      "neg": "a violin is small"
+    },
+    {
+      "subject": "trumpet",
+      "pos": "a trumpet is large",
+      "neg": "a trumpet is small"
+    },
+    {
+      "subject": "camera",
+      "pos": "a camera is large",
+      "neg": "a camera is small"
+    },
+    {
+      "subject": "television",
+      "pos": "a television is large",
+      "neg": "a television is small"
+    },
+    {
+      "subject": "radio",
+      "pos": "a radio is large",
+      "neg": "a radio is small"
+    },
+    {
+      "subject": "computer",
+      "pos": "a computer is large",
+      "neg": "a computer is small"
+    },
+    {
+      "subject": "keyboard",
+      "pos": "a keyboard is large",
+      "neg": "a keyboard is small"
+    },
+    {
+      "subject": "printer",
+      "pos": "a printer is large",
+      "neg": "a printer is small"
+    },
+    {
+      "subject": "fan",
+      "pos": "a fan is large",
+      "neg": "a fan is small"
+    },
+    {
+      "subject": "heater",
+      "pos": "a heater is large",
+      "neg": "a heater is small"
+    },
+    {
+      "subject": "refrigerator",
+      "pos": "a refrigerator is large",
+      "neg": "a refrigerator is small"
+    },
+    {
+      "subject": "oven",
+      "pos": "an oven is large",
+      "neg": "an oven is small"
+    },
+    {
+      "subject": "microwave",
+      "pos": "a microwave is large",
+      "neg": "a microwave is small"
+    },
+    {
+      "subject": "toaster",
+      "pos": "a toaster is large",
+      "neg": "a toaster is small"
+    },
+    {
+      "subject": "blender",
+      "pos": "a blender is large",
+      "neg": "a blender is small"
+    },
+    {
+      "subject": "teapot",
+      "pos": "a teapot is large",
+      "neg": "a teapot is small"
+    },
+    {
+      "subject": "doll",
+      "pos": "a doll is large",
+      "neg": "a doll is small"
+    },
+    {
+      "subject": "kite",
+      "pos": "a kite is large",
+      "neg": "a kite is small"
+    },
+    {
+      "subject": "balloon",
+      "pos": "a balloon is large",
+      "neg": "a balloon is small"
+    },
+    {
+      "subject": "drone",
+      "pos": "a drone is large",
+      "neg": "a drone is small"
+    },
+    {
+      "subject": "robot",
+      "pos": "a robot is large",
+      "neg": "a robot is small"
+    },
+    {
+      "subject": "telescope",
+      "pos": "a telescope is large",
+      "neg": "a telescope is small"
+    },
+    {
+      "subject": "globe",
+      "pos": "a globe is large",
+      "neg": "a globe is small"
+    },
+    {
+      "subject": "statue",
+      "pos": "a statue is large",
+      "neg": "a statue is small"
+    },
+    {
+      "subject": "fountain",
+      "pos": "a fountain is large",
+      "neg": "a fountain is small"
+    },
+    {
+      "subject": "bench",
+      "pos": "a bench is large",
+      "neg": "a bench is small"
+    },
+    {
+      "subject": "streetlamp",
+      "pos": "a streetlamp is large",
+      "neg": "a streetlamp is small"
+    },
+    {
+      "subject": "mailbox",
+      "pos": "a mailbox is large",
+      "neg": "a mailbox is small"
+    },
+    {
+      "subject": "hydrant",
+      "pos": "a hydrant is large",
+      "neg": "a hydrant is small"
+    },
+    {
+      "subject": "cone",
+      "pos": "a cone is large",
+      "neg": "a cone is small"
+    },
+    {
+      "subject": "sign",
+      "pos": "a sign is large",
+      "neg": "a sign is small"
+    },
+    {
+      "subject": "wagon",
+      "pos": "a wagon is large",
+      "neg": "a wagon is small"
+    },
+    {
+      "subject": "cart",
+      "pos": "a cart is large",
+      "neg": "a cart is small"
+    },
+    {
+      "subject": "anchor",
+      "pos": "an anchor is large",
+      "neg": "an anchor is small"
+    },
+    {
+      "subject": "bell",
+      "pos": "a bell is large",
+      "neg": "a bell is small"
+    },
+    {
+      "subject": "cage",
+      "pos": "a cage is large",
+      "neg": "a cage is small"
+    },
+    {
+      "subject": "chest",
+      "pos": "a chest is large",
+      "neg": "a chest is small"
+    },
+    {
+      "subject": "couch",
+      "pos": "a couch is large",
+      "neg": "a couch is small"
+    },
+    {
+      "subject": "desk",
+      "pos": "a desk is large",
+      "neg": "a desk is small"
+    },
+    {
+      "subject": "stool",
+      "pos": "a stool is large",
+      "neg": "a stool is small"
+    },
+    {
+      "subject": "wardrobe",
+      "pos": "a wardrobe is large",
+      "neg": "a wardrobe is small"
+    },
+    {
+      "subject": "trophy",
+      "pos": "a trophy is large",
+      "neg": "a trophy is small"
+    }
+  ],
+  "pos": [
+    "a ball is large",
+    "a box is large",
+    "a book is large",
+    "a cup is large",
+    "a chair is large",
+    "a table is large",
+    "a lamp is large",
+    "a bottle is large",
+    "a clock is large",
+    "a phone is large",
+    "a car is large",
+    "a truck is large",
+    "a bicycle is large",
+    "a boat is large",
+    "a house is large",
+    "a tree is large",
+    "a rock is large",
+    "a flower is large",
+    "a plate is large",
+    "a bowl is large",
+    "a knife is large",
+    "a spoon is large",
+    "a fork is large",
+    "a pillow is large",
+    "a blanket is large",
+    "a mirror is large",
+    "a painting is large",
+    "a vase is large",
+    "a candle is large",
+    "a basket is large",
+    "a bucket is large",
+    "a ladder is large",
+    "a hammer is large",
+    "an umbrella is large",
+    "a backpack is large",
+    "a suitcase is large",
+    "a hat is large",
+    "a shoe is large",
+    "a glove is large",
+    "a watch is large",
+    "a ring is large",
+    "a key is large",
+    "a coin is large",
+    "a pen is large",
+    "a pencil is large",
+    "a brush is large",
+    "a comb is large",
+    "a mug is large",
+    "a kettle is large",
+    "a pan is large",
+    "a pot is large",
+    "a jar is large",
+    "a can is large",
+    "a barrel is large",
+    "a crate is large",
+    "a drum is large",
+    "a guitar is large",
+    "a piano is large",
+    "a violin is large",
+    "a trumpet is large",
+    "a camera is large",
+    "a television is large",
+    "a radio is large",
+    "a computer is large",
+    "a keyboard is large",
+    "a printer is large",
+    "a fan is large",
+    "a heater is large",
+    "a refrigerator is large",
+    "an oven is large",
+    "a microwave is large",
+    "a toaster is large",
+    "a blender is large",
+    "a teapot is large",
+    "a doll is large",
+    "a kite is large",
+    "a balloon is large",
+    "a drone is large",
+    "a robot is large",
+    "a telescope is large",
+    "a globe is large",
+    "a statue is large",
+    "a fountain is large",
+    "a bench is large",
+    "a streetlamp is large",
+    "a mailbox is large",
+    "a hydrant is large",
+    "a cone is large",
+    "a sign is large",
+    "a wagon is large",
+    "a cart is large",
+    "an anchor is large",
+    "a bell is large",
+    "a cage is large",
+    "a chest is large",
+    "a couch is large",
+    "a desk is large",
+    "a stool is large",
+    "a wardrobe is large",
+    "a trophy is large"
+  ],
+  "neg": [
+    "a ball is small",
+    "a box is small",
+    "a book is small",
+    "a cup is small",
+    "a chair is small",
+    "a table is small",
+    "a lamp is small",
+    "a bottle is small",
+    "a clock is small",
+    "a phone is small",
+    "a car is small",
+    "a truck is small",
+    "a bicycle is small",
+    "a boat is small",
+    "a house is small",
+    "a tree is small",
+    "a rock is small",
+    "a flower is small",
+    "a plate is small",
+    "a bowl is small",
+    "a knife is small",
+    "a spoon is small",
+    "a fork is small",
+    "a pillow is small",
+    "a blanket is small",
+    "a mirror is small",
+    "a painting is small",
+    "a vase is small",
+    "a candle is small",
+    "a basket is small",
+    "a bucket is small",
+    "a ladder is small",
+    "a hammer is small",
+    "an umbrella is small",
+    "a backpack is small",
+    "a suitcase is small",
+    "a hat is small",
+    "a shoe is small",
+    "a glove is small",
+    "a watch is small",
+    "a ring is small",
+    "a key is small",
+    "a coin is small",
+    "a pen is small",
+    "a pencil is small",
+    "a brush is small",
+    "a comb is small",
+    "a mug is small",
+    "a kettle is small",
+    "a pan is small",
+    "a pot is small",
+    "a jar is small",
+    "a can is small",
+    "a barrel is small",
+    "a crate is small",
+    "a drum is small",
+    "a guitar is small",
+    "a piano is small",
+    "a violin is small",
+    "a trumpet is small",
+    "a camera is small",
+    "a television is small",
+    "a radio is small",
+    "a computer is small",
+    "a keyboard is small",
+    "a printer is small",
+    "a fan is small",
+    "a heater is small",
+    "a refrigerator is small",
+    "an oven is small",
+    "a microwave is small",
+    "a toaster is small",
+    "a blender is small",
+    "a teapot is small",
+    "a doll is small",
+    "a kite is small",
+    "a balloon is small",
+    "a drone is small",
+    "a robot is small",
+    "a telescope is small",
+    "a globe is small",
+    "a statue is small",
+    "a fountain is small",
+    "a bench is small",
+    "a streetlamp is small",
+    "a mailbox is small",
+    "a hydrant is small",
+    "a cone is small",
+    "a sign is small",
+    "a wagon is small",
+    "a cart is small",
+    "an anchor is small",
+    "a bell is small",
+    "a cage is small",
+    "a chest is small",
+    "a couch is small",
+    "a desk is small",
+    "a stool is small",
+    "a wardrobe is small",
+    "a trophy is small"
+  ]
+}

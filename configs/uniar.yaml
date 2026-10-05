@@ -1,0 +1,32 @@
+# UniAR (ShareLab-SII/UniAR-RL): Qwen3-VL backbone, 36 layers, BSQ image tokens rendered by an SD3 decoder.
+# Paper Tables 4 and 5. Layer indices are 0-based.
+model: uniar
+model_args:
+  image_size: 512            # 16 x 16 image tokens; the SD3 decoder renders 544 x 544
+  decoder_steps: 16
+  guidance: 1.5              # AR and decoder guidance (model defaults)
+  temperature: 1.0
+
+concepts: [emotion, age, cleanness, chaos, size, near_far, spatial_lr, color]
+
+layer_configs:
+  L9: [9]
+  L18: [18]
+  L27: [27]
+  early: [7, 8, 9, 10]
+  mid: [16, 17, 18, 19]
+  late: [25, 26, 27, 28]
+  all: all
+
+# Five evenly spaced strengths per sign, plus the unsteered alpha = 0.
+alphas:
+  txt2txt: {max: 100, step: 20}
+  img2txt: {max: 100, step: 20}
+  img2img: {max: 10, step: 2}
+  txt2img: {max: 15, step: 3}
+
+text: {max_new_tokens: 96}
+seed: 42
+# image_batch 20 = the paper's runs (one call per strength, all 20 prompts); seeded images depend on it.
+text_batch: 256
+image_batch: 20

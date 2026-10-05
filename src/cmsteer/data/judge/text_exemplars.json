@@ -1,0 +1,75 @@
+{
+ "note": "The ten text few-shot exemplars of the concept-rate judge, exactly as served to the human rater (truncated mid-sentence on purpose). choice: a = original, b = steered, tie.",
+ "exemplars": [
+  {
+   "external_id": "text2text:size:0:mid4:+0.20",
+   "asked_pole": "smaller",
+   "choice": "a",
+   "original": "A red phone booth stands frozen in time, its vibrant color a stark contrast against the muted winter landscape. The booth's glass panels are etched with frost, giving it a hazy, dreamlike quality. Inside, the familiar rows of buttons and the curved handset are visible, though slightly obscured by the cold. The",
+   "steered": "A large, iconic red telephone box stands prominently in the foreground, its towering structure stretching skyward, its surface shimmering with a deep, rich red hue. The structure is constructed from a series of vertical panels, with a series of vertical vertical panels, each measuring approximately 10 feet in height, creating a sense"
+  },
+  {
+   "external_id": "image2text:emotion:9:early4:-0.04",
+   "asked_pole": "happier",
+   "choice": "a",
+   "original": "A round-headed toy robot with a plain, unadorned face stands motionless in a stark, monochromatic setting. Its body is simple and boxy, with smooth, rounded edges that give it a friendly, approachable appearance. The robot's head is large and spherical, with no visible eyes or mouth",
+   "steered": "A round-headed toy robot stands motionless, its body a simple, unadorned form of smooth, matte plastic. Its head is a perfect sphere, lacking any features—no eyes, no mouth, no expression—just a blank, featureless surface. The robot's limbs are short and stubby, ending"
+  },
+  {
+   "external_id": "text2text:size:7:L26:-0.16",
+   "asked_pole": "smaller",
+   "choice": "a",
+   "original": "A mailbox, frozen in time, stands as a silent sentinel against a backdrop of winter's chill. Its surface is dusted with a light layer of snow, giving it a soft, white blanket that contrasts with the dark, weathered metal. The mailbox is rectangular, with a slightly curved top and a small, rectangular",
+   "steered": "A mailbox, captured in a single frozen snapshot, stands as a silent sentinel against a backdrop of muted winter tones. Its metallic surface, once gleaming with the promise of mail, now bears the weight of time and the quiet dignity of its purpose. The mailbox, likely made of durable metal, is perched on a"
+  },
+  {
+   "external_id": "text2text:depth:11:late4:-0.04",
+   "asked_pole": "farther",
+   "choice": "tie",
+   "original": "A fire hydrant frozen in time, its vibrant red color stark against the white snow. The hydrant's cap is securely fastened, and the nozzles are capped with snow, preserving their original positions. The surrounding ground is blanketed in a thick layer of snow, untouched except for the hydrant's base",
+   "steered": "A fire hydrant stands frozen in a winter landscape, its vibrant red color stark against the white snow. The hydrant is encased in a layer of frost, with icicles hanging from its nozzles and caps, glistening in the soft, diffused light of a cold day. The surrounding ground is blank"
+  },
+  {
+   "external_id": "text2text:depth:17:L26:+0.04",
+   "asked_pole": "closer",
+   "choice": "tie",
+   "original": "A lighthouse stands tall and solitary, its cylindrical form etched in stark contrast against the cold, muted sky. The structure is painted in a deep, weathered blue, its surface marked by the relentless passage of time and the elements. The top of the lighthouse is crowned with a lantern room, its glass panels",
+   "steered": "A lighthouse stands tall and solitary, its cylindrical structure painted in stark white, contrasting sharply with the surrounding darkness. The top of the lighthouse is crowned with a black lantern room, housing a powerful light that pierces the night. The lantern room is encircled by a railing, and a small, pointed roof"
+  },
+  {
+   "external_id": "text2text:cleanness:12:L26:-0.16",
+   "asked_pole": "cleaner",
+   "choice": "b",
+   "original": "A window with a wooden sill and glass panes, captured in a single frozen snapshot, presents a scene of quiet stillness. The wooden sill, crafted from a warm, natural wood, provides a sturdy base for the window, its grain and texture visible in the soft light. The glass panes, divided by thin",
+   "steered": "A window with a wooden sill and glass panes, captured in a single frozen snapshot, presents a serene and timeless scene. The wooden sill, crafted from smooth, polished wood, exudes warmth and natural beauty, its rich, earthy tones contrasting with the cool, transparent glass panes. The glass panes are"
+  },
+  {
+   "external_id": "text2text:chaos:13:L16:-0.12",
+   "asked_pole": "more peaceful",
+   "choice": "b",
+   "original": "A train station platform, captured in a single frozen moment, presents a scene of quiet anticipation. The platform is lined with rows of benches, their metal frames gleaming under the soft, diffused light of an overcast sky. The benches, evenly spaced, invite travelers to pause and wait, their empty seats hinting",
+   "steered": "A serene winter scene unfolds at a train station platform, where the air is crisp and the ground is blanketed in a thick layer of pristine white snow. The platform is quiet and still, with only a few benches scattered along its length, their dark frames contrasting sharply against the snowy landscape. The benches are empty, inviting"
+  },
+  {
+   "external_id": "text2text:age:2:mid4:+0.12",
+   "asked_pole": "older",
+   "choice": "b",
+   "original": "A man stands in a snowy landscape, his figure slightly blurred by the cold air. He wears a classic, well-worn denim jacket that is a deep indigo blue, with visible stitching and a slightly faded texture. The jacket is buttoned up, and the collar is slightly raised, suggesting a chill in the air",
+   "steered": "The image captures a single frozen moment of an elderly man standing in a snowy landscape. His face is deeply wrinkled, with deep lines etched into his skin, and his eyes are closed, suggesting a long life of experience and wisdom. He wears a heavy, dark blue denim jacket that is frayed at the edges"
+  },
+  {
+   "external_id": "text2text:spatial:5:L8:+0.08",
+   "asked_pole": "further left",
+   "choice": "tie",
+   "original": "A streetlamp stands tall and solitary, its metal pole gleaming with a cool, silver sheen. The lamp itself is a classic design, with a rounded, frosted glass globe that reflects the soft, diffused light of the overcast sky. The top of the pole is capped with a small, pointed fin",
+   "steered": "A streetlamp stands tall and solitary, its metal pole gleaming with a cool, silver sheen. The lamp itself is a classic design, with a rounded, domed top that houses a warm, inviting light. The light is currently off, but the lamp's surface reflects the surrounding environment, hinting at the"
+  },
+  {
+   "external_id": "image2text:depth:15:mid4:+0.08",
+   "asked_pole": "closer",
+   "choice": "b",
+   "original": "A single frozen snapshot of a tent captures a moment of stillness and solitude. The tent, likely a dome or bell-shaped structure, stands as a solitary figure against a vast, wintry landscape. Its fabric, possibly a muted green or beige, is stretched taut, forming a smooth, rounded surface that reflects the",
+   "steered": "A single frozen snapshot of a tent captures a moment of stillness and solitude. The tent, likely made of durable fabric, stands upright with its entrance slightly ajar, revealing a glimpse of the interior. Its sturdy frame is visible, suggesting it's designed for outdoor adventures. The background is blurred, focusing attention on the"
+  }
+ ]
+}

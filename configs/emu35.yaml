@@ -1,0 +1,32 @@
+# Emu3.5 (BAAI/Emu3.5): 34B dense transformer, 64 layers, VQ image tokens.
+# Paper Tables 4 and 5. Layer indices are 0-based; layer ranges span eight layers (twice the depth of the others).
+model: emu35
+model_args:
+  image_grid: 32             # 32 x 32 image tokens, 512 x 512 px
+  guidance: 2.0
+  top_k: 10240
+  top_p: 1.0
+  temperature: 1.0
+
+concepts: [emotion, age, cleanness, chaos, size, near_far, spatial_lr, color]
+
+layer_configs:
+  L16: [16]
+  L32: [32]
+  L48: [48]
+  early: [12, 13, 14, 15, 16, 17, 18, 19]
+  mid: [28, 29, 30, 31, 32, 33, 34, 35]
+  late: [44, 45, 46, 47, 48, 49, 50, 51]
+  all: all
+
+alphas:
+  txt2txt: {max: 25, step: 5}
+  img2txt: {max: 25, step: 5}
+  img2img: {max: 1.5, step: 0.3}
+  txt2img: {max: 5, step: 1}
+
+text: {max_new_tokens: 96}
+seed: 42
+# The paper's Emu3.5 images came from a patched vLLM engine, so no batch size reproduces them exactly.
+text_batch: 48
+image_batch: 8

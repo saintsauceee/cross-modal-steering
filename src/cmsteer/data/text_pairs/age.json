@@ -1,0 +1,713 @@
+{
+  "concept": "age",
+  "pos_label": "old",
+  "neg_label": "young",
+  "template": "{art} {subject} is {age}",
+  "n_pairs": 100,
+  "pairs": [
+    {
+      "subject": "person",
+      "pos": "a person is old",
+      "neg": "a person is young"
+    },
+    {
+      "subject": "man",
+      "pos": "a man is old",
+      "neg": "a man is young"
+    },
+    {
+      "subject": "woman",
+      "pos": "a woman is old",
+      "neg": "a woman is young"
+    },
+    {
+      "subject": "adult",
+      "pos": "an adult is old",
+      "neg": "an adult is young"
+    },
+    {
+      "subject": "individual",
+      "pos": "an individual is old",
+      "neg": "an individual is young"
+    },
+    {
+      "subject": "teacher",
+      "pos": "a teacher is old",
+      "neg": "a teacher is young"
+    },
+    {
+      "subject": "doctor",
+      "pos": "a doctor is old",
+      "neg": "a doctor is young"
+    },
+    {
+      "subject": "nurse",
+      "pos": "a nurse is old",
+      "neg": "a nurse is young"
+    },
+    {
+      "subject": "farmer",
+      "pos": "a farmer is old",
+      "neg": "a farmer is young"
+    },
+    {
+      "subject": "artist",
+      "pos": "an artist is old",
+      "neg": "an artist is young"
+    },
+    {
+      "subject": "musician",
+      "pos": "a musician is old",
+      "neg": "a musician is young"
+    },
+    {
+      "subject": "chef",
+      "pos": "a chef is old",
+      "neg": "a chef is young"
+    },
+    {
+      "subject": "driver",
+      "pos": "a driver is old",
+      "neg": "a driver is young"
+    },
+    {
+      "subject": "soldier",
+      "pos": "a soldier is old",
+      "neg": "a soldier is young"
+    },
+    {
+      "subject": "dancer",
+      "pos": "a dancer is old",
+      "neg": "a dancer is young"
+    },
+    {
+      "subject": "writer",
+      "pos": "a writer is old",
+      "neg": "a writer is young"
+    },
+    {
+      "subject": "scientist",
+      "pos": "a scientist is old",
+      "neg": "a scientist is young"
+    },
+    {
+      "subject": "engineer",
+      "pos": "an engineer is old",
+      "neg": "an engineer is young"
+    },
+    {
+      "subject": "lawyer",
+      "pos": "a lawyer is old",
+      "neg": "a lawyer is young"
+    },
+    {
+      "subject": "waiter",
+      "pos": "a waiter is old",
+      "neg": "a waiter is young"
+    },
+    {
+      "subject": "waitress",
+      "pos": "a waitress is old",
+      "neg": "a waitress is young"
+    },
+    {
+      "subject": "barber",
+      "pos": "a barber is old",
+      "neg": "a barber is young"
+    },
+    {
+      "subject": "fisherman",
+      "pos": "a fisherman is old",
+      "neg": "a fisherman is young"
+    },
+    {
+      "subject": "pilot",
+      "pos": "a pilot is old",
+      "neg": "a pilot is young"
+    },
+    {
+      "subject": "athlete",
+      "pos": "an athlete is old",
+      "neg": "an athlete is young"
+    },
+    {
+      "subject": "singer",
+      "pos": "a singer is old",
+      "neg": "a singer is young"
+    },
+    {
+      "subject": "painter",
+      "pos": "a painter is old",
+      "neg": "a painter is young"
+    },
+    {
+      "subject": "actor",
+      "pos": "an actor is old",
+      "neg": "an actor is young"
+    },
+    {
+      "subject": "actress",
+      "pos": "an actress is old",
+      "neg": "an actress is young"
+    },
+    {
+      "subject": "baker",
+      "pos": "a baker is old",
+      "neg": "a baker is young"
+    },
+    {
+      "subject": "builder",
+      "pos": "a builder is old",
+      "neg": "a builder is young"
+    },
+    {
+      "subject": "gardener",
+      "pos": "a gardener is old",
+      "neg": "a gardener is young"
+    },
+    {
+      "subject": "librarian",
+      "pos": "a librarian is old",
+      "neg": "a librarian is young"
+    },
+    {
+      "subject": "mechanic",
+      "pos": "a mechanic is old",
+      "neg": "a mechanic is young"
+    },
+    {
+      "subject": "photographer",
+      "pos": "a photographer is old",
+      "neg": "a photographer is young"
+    },
+    {
+      "subject": "plumber",
+      "pos": "a plumber is old",
+      "neg": "a plumber is young"
+    },
+    {
+      "subject": "sailor",
+      "pos": "a sailor is old",
+      "neg": "a sailor is young"
+    },
+    {
+      "subject": "tailor",
+      "pos": "a tailor is old",
+      "neg": "a tailor is young"
+    },
+    {
+      "subject": "veterinarian",
+      "pos": "a veterinarian is old",
+      "neg": "a veterinarian is young"
+    },
+    {
+      "subject": "banker",
+      "pos": "a banker is old",
+      "neg": "a banker is young"
+    },
+    {
+      "subject": "cashier",
+      "pos": "a cashier is old",
+      "neg": "a cashier is young"
+    },
+    {
+      "subject": "clerk",
+      "pos": "a clerk is old",
+      "neg": "a clerk is young"
+    },
+    {
+      "subject": "coach",
+      "pos": "a coach is old",
+      "neg": "a coach is young"
+    },
+    {
+      "subject": "cook",
+      "pos": "a cook is old",
+      "neg": "a cook is young"
+    },
+    {
+      "subject": "dentist",
+      "pos": "a dentist is old",
+      "neg": "a dentist is young"
+    },
+    {
+      "subject": "editor",
+      "pos": "an editor is old",
+      "neg": "an editor is young"
+    },
+    {
+      "subject": "guard",
+      "pos": "a guard is old",
+      "neg": "a guard is young"
+    },
+    {
+      "subject": "hunter",
+      "pos": "a hunter is old",
+      "neg": "a hunter is young"
+    },
+    {
+      "subject": "judge",
+      "pos": "a judge is old",
+      "neg": "a judge is young"
+    },
+    {
+      "subject": "knight",
+      "pos": "a knight is old",
+      "neg": "a knight is young"
+    },
+    {
+      "subject": "monk",
+      "pos": "a monk is old",
+      "neg": "a monk is young"
+    },
+    {
+      "subject": "nun",
+      "pos": "a nun is old",
+      "neg": "a nun is young"
+    },
+    {
+      "subject": "poet",
+      "pos": "a poet is old",
+      "neg": "a poet is young"
+    },
+    {
+      "subject": "priest",
+      "pos": "a priest is old",
+      "neg": "a priest is young"
+    },
+    {
+      "subject": "professor",
+      "pos": "a professor is old",
+      "neg": "a professor is young"
+    },
+    {
+      "subject": "referee",
+      "pos": "a referee is old",
+      "neg": "a referee is young"
+    },
+    {
+      "subject": "reporter",
+      "pos": "a reporter is old",
+      "neg": "a reporter is young"
+    },
+    {
+      "subject": "surgeon",
+      "pos": "a surgeon is old",
+      "neg": "a surgeon is young"
+    },
+    {
+      "subject": "tourist",
+      "pos": "a tourist is old",
+      "neg": "a tourist is young"
+    },
+    {
+      "subject": "firefighter",
+      "pos": "a firefighter is old",
+      "neg": "a firefighter is young"
+    },
+    {
+      "subject": "carpenter",
+      "pos": "a carpenter is old",
+      "neg": "a carpenter is young"
+    },
+    {
+      "subject": "neighbor",
+      "pos": "a neighbor is old",
+      "neg": "a neighbor is young"
+    },
+    {
+      "subject": "stranger",
+      "pos": "a stranger is old",
+      "neg": "a stranger is young"
+    },
+    {
+      "subject": "customer",
+      "pos": "a customer is old",
+      "neg": "a customer is young"
+    },
+    {
+      "subject": "patient",
+      "pos": "a patient is old",
+      "neg": "a patient is young"
+    },
+    {
+      "subject": "passenger",
+      "pos": "a passenger is old",
+      "neg": "a passenger is young"
+    },
+    {
+      "subject": "guest",
+      "pos": "a guest is old",
+      "neg": "a guest is young"
+    },
+    {
+      "subject": "colleague",
+      "pos": "a colleague is old",
+      "neg": "a colleague is young"
+    },
+    {
+      "subject": "roommate",
+      "pos": "a roommate is old",
+      "neg": "a roommate is young"
+    },
+    {
+      "subject": "classmate",
+      "pos": "a classmate is old",
+      "neg": "a classmate is young"
+    },
+    {
+      "subject": "friend",
+      "pos": "a friend is old",
+      "neg": "a friend is young"
+    },
+    {
+      "subject": "worker",
+      "pos": "a worker is old",
+      "neg": "a worker is young"
+    },
+    {
+      "subject": "manager",
+      "pos": "a manager is old",
+      "neg": "a manager is young"
+    },
+    {
+      "subject": "director",
+      "pos": "a director is old",
+      "neg": "a director is young"
+    },
+    {
+      "subject": "officer",
+      "pos": "an officer is old",
+      "neg": "an officer is young"
+    },
+    {
+      "subject": "agent",
+      "pos": "an agent is old",
+      "neg": "an agent is young"
+    },
+    {
+      "subject": "assistant",
+      "pos": "an assistant is old",
+      "neg": "an assistant is young"
+    },
+    {
+      "subject": "secretary",
+      "pos": "a secretary is old",
+      "neg": "a secretary is young"
+    },
+    {
+      "subject": "receptionist",
+      "pos": "a receptionist is old",
+      "neg": "a receptionist is young"
+    },
+    {
+      "subject": "salesperson",
+      "pos": "a salesperson is old",
+      "neg": "a salesperson is young"
+    },
+    {
+      "subject": "shopkeeper",
+      "pos": "a shopkeeper is old",
+      "neg": "a shopkeeper is young"
+    },
+    {
+      "subject": "merchant",
+      "pos": "a merchant is old",
+      "neg": "a merchant is young"
+    },
+    {
+      "subject": "trader",
+      "pos": "a trader is old",
+      "neg": "a trader is young"
+    },
+    {
+      "subject": "rancher",
+      "pos": "a rancher is old",
+      "neg": "a rancher is young"
+    },
+    {
+      "subject": "miner",
+      "pos": "a miner is old",
+      "neg": "a miner is young"
+    },
+    {
+      "subject": "welder",
+      "pos": "a welder is old",
+      "neg": "a welder is young"
+    },
+    {
+      "subject": "electrician",
+      "pos": "an electrician is old",
+      "neg": "an electrician is young"
+    },
+    {
+      "subject": "roofer",
+      "pos": "a roofer is old",
+      "neg": "a roofer is young"
+    },
+    {
+      "subject": "mason",
+      "pos": "a mason is old",
+      "neg": "a mason is young"
+    },
+    {
+      "subject": "locksmith",
+      "pos": "a locksmith is old",
+      "neg": "a locksmith is young"
+    },
+    {
+      "subject": "jeweler",
+      "pos": "a jeweler is old",
+      "neg": "a jeweler is young"
+    },
+    {
+      "subject": "florist",
+      "pos": "a florist is old",
+      "neg": "a florist is young"
+    },
+    {
+      "subject": "butcher",
+      "pos": "a butcher is old",
+      "neg": "a butcher is young"
+    },
+    {
+      "subject": "cyclist",
+      "pos": "a cyclist is old",
+      "neg": "a cyclist is young"
+    },
+    {
+      "subject": "runner",
+      "pos": "a runner is old",
+      "neg": "a runner is young"
+    },
+    {
+      "subject": "swimmer",
+      "pos": "a swimmer is old",
+      "neg": "a swimmer is young"
+    },
+    {
+      "subject": "climber",
+      "pos": "a climber is old",
+      "neg": "a climber is young"
+    },
+    {
+      "subject": "violinist",
+      "pos": "a violinist is old",
+      "neg": "a violinist is young"
+    },
+    {
+      "subject": "pianist",
+      "pos": "a pianist is old",
+      "neg": "a pianist is young"
+    },
+    {
+      "subject": "conductor",
+      "pos": "a conductor is old",
+      "neg": "a conductor is young"
+    }
+  ],
+  "pos": [
+    "a person is old",
+    "a man is old",
+    "a woman is old",
+    "an adult is old",
+    "an individual is old",
+    "a teacher is old",
+    "a doctor is old",
+    "a nurse is old",
+    "a farmer is old",
+    "an artist is old",
+    "a musician is old",
+    "a chef is old",
+    "a driver is old",
+    "a soldier is old",
+    "a dancer is old",
+    "a writer is old",
+    "a scientist is old",
+    "an engineer is old",
+    "a lawyer is old",
+    "a waiter is old",
+    "a waitress is old",
+    "a barber is old",
+    "a fisherman is old",
+    "a pilot is old",
+    "an athlete is old",
+    "a singer is old",
+    "a painter is old",
+    "an actor is old",
+    "an actress is old",
+    "a baker is old",
+    "a builder is old",
+    "a gardener is old",
+    "a librarian is old",
+    "a mechanic is old",
+    "a photographer is old",
+    "a plumber is old",
+    "a sailor is old",
+    "a tailor is old",
+    "a veterinarian is old",
+    "a banker is old",
+    "a cashier is old",
+    "a clerk is old",
+    "a coach is old",
+    "a cook is old",
+    "a dentist is old",
+    "an editor is old",
+    "a guard is old",
+    "a hunter is old",
+    "a judge is old",
+    "a knight is old",
+    "a monk is old",
+    "a nun is old",
+    "a poet is old",
+    "a priest is old",
+    "a professor is old",
+    "a referee is old",
+    "a reporter is old",
+    "a surgeon is old",
+    "a tourist is old",
+    "a firefighter is old",
+    "a carpenter is old",
+    "a neighbor is old",
+    "a stranger is old",
+    "a customer is old",
+    "a patient is old",
+    "a passenger is old",
+    "a guest is old",
+    "a colleague is old",
+    "a roommate is old",
+    "a classmate is old",
+    "a friend is old",
+    "a worker is old",
+    "a manager is old",
+    "a director is old",
+    "an officer is old",
+    "an agent is old",
+    "an assistant is old",
+    "a secretary is old",
+    "a receptionist is old",
+    "a salesperson is old",
+    "a shopkeeper is old",
+    "a merchant is old",
+    "a trader is old",
+    "a rancher is old",
+    "a miner is old",
+    "a welder is old",
+    "an electrician is old",
+    "a roofer is old",
+    "a mason is old",
+    "a locksmith is old",
+    "a jeweler is old",
+    "a florist is old",
+    "a butcher is old",
+    "a cyclist is old",
+    "a runner is old",
+    "a swimmer is old",
+    "a climber is old",
+    "a violinist is old",
+    "a pianist is old",
+    "a conductor is old"
+  ],
+  "neg": [
+    "a person is young",
+    "a man is young",
+    "a woman is young",
+    "an adult is young",
+    "an individual is young",
+    "a teacher is young",
+    "a doctor is young",
+    "a nurse is young",
+    "a farmer is young",
+    "an artist is young",
+    "a musician is young",
+    "a chef is young",
+    "a driver is young",
+    "a soldier is young",
+    "a dancer is young",
+    "a writer is young",
+    "a scientist is young",
+    "an engineer is young",
+    "a lawyer is young",
+    "a waiter is young",
+    "a waitress is young",
+    "a barber is young",
+    "a fisherman is young",
+    "a pilot is young",
+    "an athlete is young",
+    "a singer is young",
+    "a painter is young",
+    "an actor is young",
+    "an actress is young",
+    "a baker is young",
+    "a builder is young",
+    "a gardener is young",
+    "a librarian is young",
+    "a mechanic is young",
+    "a photographer is young",
+    "a plumber is young",
+    "a sailor is young",
+    "a tailor is young",
+    "a veterinarian is young",
+    "a banker is young",
+    "a cashier is young",
+    "a clerk is young",
+    "a coach is young",
+    "a cook is young",
+    "a dentist is young",
+    "an editor is young",
+    "a guard is young",
+    "a hunter is young",
+    "a judge is young",
+    "a knight is young",
+    "a monk is young",
+    "a nun is young",
+    "a poet is young",
+    "a priest is young",
+    "a professor is young",
+    "a referee is young",
+    "a reporter is young",
+    "a surgeon is young",
+    "a tourist is young",
+    "a firefighter is young",
+    "a carpenter is young",
+    "a neighbor is young",
+    "a stranger is young",
+    "a customer is young",
+    "a patient is young",
+    "a passenger is young",
+    "a guest is young",
+    "a colleague is young",
+    "a roommate is young",
+    "a classmate is young",
+    "a friend is young",
+    "a worker is young",
+    "a manager is young",
+    "a director is young",
+    "an officer is young",
+    "an agent is young",
+    "an assistant is young",
+    "a secretary is young",
+    "a receptionist is young",
+    "a salesperson is young",
+    "a shopkeeper is young",
+    "a merchant is young",
+    "a trader is young",
+    "a rancher is young",
+    "a miner is young",
+    "a welder is young",
+    "an electrician is young",
+    "a roofer is young",
+    "a mason is young",
+    "a locksmith is young",
+    "a jeweler is young",
+    "a florist is young",
+    "a butcher is young",
+    "a cyclist is young",
+    "a runner is young",
+    "a swimmer is young",
+    "a climber is young",
+    "a violinist is young",
+    "a pianist is young",
+    "a conductor is young"
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "concept": "near_far",
+  "pos_label": "near",
+  "neg_label": "far",
+  "template": "{art} {subject} is {near_far}",
+  "n_pairs": 100,
+  "pairs": [
+    {
+      "subject": "ball",
+      "pos": "a ball is nearby",
+      "neg": "a ball is far away"
+    },
+    {
+      "subject": "box",
+      "pos": "a box is nearby",
+      "neg": "a box is far away"
+    },
+    {
+      "subject": "book",
+      "pos": "a book is nearby",
+      "neg": "a book is far away"
+    },
+    {
+      "subject": "cup",
+      "pos": "a cup is nearby",
+      "neg": "a cup is far away"
+    },
+    {
+      "subject": "chair",
+      "pos": "a chair is nearby",
+      "neg": "a chair is far away"
+    },
+    {
+      "subject": "table",
+      "pos": "a table is nearby",
+      "neg": "a table is far away"
+    },
+    {
+      "subject": "lamp",
+      "pos": "a lamp is nearby",
+      "neg": "a lamp is far away"
+    },
+    {
+      "subject": "bottle",
+      "pos": "a bottle is nearby",
+      "neg": "a bottle is far away"
+    },
+    {
+      "subject": "clock",
+      "pos": "a clock is nearby",
+      "neg": "a clock is far away"
+    },
+    {
+      "subject": "phone",
+      "pos": "a phone is nearby",
+      "neg": "a phone is far away"
+    },
+    {
+      "subject": "car",
+      "pos": "a car is nearby",
+      "neg": "a car is far away"
+    },
+    {
+      "subject": "truck",
+      "pos": "a truck is nearby",
+      "neg": "a truck is far away"
+    },
+    {
+      "subject": "bicycle",
+      "pos": "a bicycle is nearby",
+      "neg": "a bicycle is far away"
+    },
+    {
+      "subject": "boat",
+      "pos": "a boat is nearby",
+      "neg": "a boat is far away"
+    },
+    {
+      "subject": "house",
+      "pos": "a house is nearby",
+      "neg": "a house is far away"
+    },
+    {
+      "subject": "tree",
+      "pos": "a tree is nearby",
+      "neg": "a tree is far away"
+    },
+    {
+      "subject": "rock",
+      "pos": "a rock is nearby",
+      "neg": "a rock is far away"
+    },
+    {
+      "subject": "flower",
+      "pos": "a flower is nearby",
+      "neg": "a flower is far away"
+    },
+    {
+      "subject": "plate",
+      "pos": "a plate is nearby",
+      "neg": "a plate is far away"
+    },
+    {
+      "subject": "bowl",
+      "pos": "a bowl is nearby",
+      "neg": "a bowl is far away"
+    },
+    {
+      "subject": "knife",
+      "pos": "a knife is nearby",
+      "neg": "a knife is far away"
+    },
+    {
+      "subject": "spoon",
+      "pos": "a spoon is nearby",
+      "neg": "a spoon is far away"
+    },
+    {
+      "subject": "fork",
+      "pos": "a fork is nearby",
+      "neg": "a fork is far away"
+    },
+    {
+      "subject": "pillow",
+      "pos": "a pillow is nearby",
+      "neg": "a pillow is far away"
+    },
+    {
+      "subject": "blanket",
+      "pos": "a blanket is nearby",
+      "neg": "a blanket is far away"
+    },
+    {
+      "subject": "mirror",
+      "pos": "a mirror is nearby",
+      "neg": "a mirror is far away"
+    },
+    {
+      "subject": "painting",
+      "pos": "a painting is nearby",
+      "neg": "a painting is far away"
+    },
+    {
+      "subject": "vase",
+      "pos": "a vase is nearby",
+      "neg": "a vase is far away"
+    },
+    {
+      "subject": "candle",
+      "pos": "a candle is nearby",
+      "neg": "a candle is far away"
+    },
+    {
+      "subject": "basket",
+      "pos": "a basket is nearby",
+      "neg": "a basket is far away"
+    },
+    {
+      "subject": "bucket",
+      "pos": "a bucket is nearby",
+      "neg": "a bucket is far away"
+    },
+    {
+      "subject": "ladder",
+      "pos": "a ladder is nearby",
+      "neg": "a ladder is far away"
+    },
+    {
+      "subject": "hammer",
+      "pos": "a hammer is nearby",
+      "neg": "a hammer is far away"
+    },
+    {
+      "subject": "umbrella",
+      "pos": "an umbrella is nearby",
+      "neg": "an umbrella is far away"
+    },
+    {
+      "subject": "backpack",
+      "pos": "a backpack is nearby",
+      "neg": "a backpack is far away"
+    },
+    {
+      "subject": "suitcase",
+      "pos": "a suitcase is nearby",
+      "neg": "a suitcase is far away"
+    },
+    {
+      "subject": "hat",
+      "pos": "a hat is nearby",
+      "neg": "a hat is far away"
+    },
+    {
+      "subject": "shoe",
+      "pos": "a shoe is nearby",
+      "neg": "a shoe is far away"
+    },
+    {
+      "subject": "glove",
+      "pos": "a glove is nearby",
+      "neg": "a glove is far away"
+    },
+    {
+      "subject": "watch",
+      "pos": "a watch is nearby",
+      "neg": "a watch is far away"
+    },
+    {
+      "subject": "ring",
+      "pos": "a ring is nearby",
+      "neg": "a ring is far away"
+    },
+    {
+      "subject": "key",
+      "pos": "a key is nearby",
+      "neg": "a key is far away"
+    },
+    {
+      "subject": "coin",
+      "pos": "a coin is nearby",
+      "neg": "a coin is far away"
+    },
+    {
+      "subject": "pen",
+      "pos": "a pen is nearby",
+      "neg": "a pen is far away"
+    },
+    {
+      "subject": "pencil",
+      "pos": "a pencil is nearby",
+      "neg": "a pencil is far away"
+    },
+    {
+      "subject": "brush",
+      "pos": "a brush is nearby",
+      "neg": "a brush is far away"
+    },
+    {
+      "subject": "comb",
+      "pos": "a comb is nearby",
+      "neg": "a comb is far away"
+    },
+    {
+      "subject": "mug",
+      "pos": "a mug is nearby",
+      "neg": "a mug is far away"
+    },
+    {
+      "subject": "kettle",
+      "pos": "a kettle is nearby",
+      "neg": "a kettle is far away"
+    },
+    {
+      "subject": "pan",
+      "pos": "a pan is nearby",
+      "neg": "a pan is far away"
+    },
+    {
+      "subject": "pot",
+      "pos": "a pot is nearby",
+      "neg": "a pot is far away"
+    },
+    {
+      "subject": "jar",
+      "pos": "a jar is nearby",
+      "neg": "a jar is far away"
+    },
+    {
+      "subject": "can",
+      "pos": "a can is nearby",
+      "neg": "a can is far away"
+    },
+    {
+      "subject": "barrel",
+      "pos": "a barrel is nearby",
+      "neg": "a barrel is far away"
+    },
+    {
+      "subject": "crate",
+      "pos": "a crate is nearby",
+      "neg": "a crate is far away"
+    },
+    {
+      "subject": "drum",
+      "pos": "a drum is nearby",
+      "neg": "a drum is far away"
+    },
+    {
+      "subject": "guitar",
+      "pos": "a guitar is nearby",
+      "neg": "a guitar is far away"
+    },
+    {
+      "subject": "piano",
+      "pos": "a piano is nearby",
+      "neg": "a piano is far away"
+    },
+    {
+      "subject": "violin",
+      "pos": "a violin is nearby",
+      "neg": "a violin is far away"
+    },
+    {
+      "subject": "trumpet",
+      "pos": "a trumpet is nearby",
+      "neg": "a trumpet is far away"
+    },
+    {
+      "subject": "camera",
+      "pos": "a camera is nearby",
+      "neg": "a camera is far away"
+    },
+    {
+      "subject": "television",
+      "pos": "a television is nearby",
+      "neg": "a television is far away"
+    },
+    {
+      "subject": "radio",
+      "pos": "a radio is nearby",
+      "neg": "a radio is far away"
+    },
+    {
+      "subject": "computer",
+      "pos": "a computer is nearby",
+      "neg": "a computer is far away"
+    },
+    {
+      "subject": "keyboard",
+      "pos": "a keyboard is nearby",
+      "neg": "a keyboard is far away"
+    },
+    {
+      "subject": "printer",
+      "pos": "a printer is nearby",
+      "neg": "a printer is far away"
+    },
+    {
+      "subject": "fan",
+      "pos": "a fan is nearby",
+      "neg": "a fan is far away"
+    },
+    {
+      "subject": "heater",
+      "pos": "a heater is nearby",
+      "neg": "a heater is far away"
+    },
+    {
+      "subject": "refrigerator",
+      "pos": "a refrigerator is nearby",
+      "neg": "a refrigerator is far away"
+    },
+    {
+      "subject": "oven",
+      "pos": "an oven is nearby",
+      "neg": "an oven is far away"
+    },
+    {
+      "subject": "microwave",
+      "pos": "a microwave is nearby",
+      "neg": "a microwave is far away"
+    },
+    {
+      "subject": "toaster",
+      "pos": "a toaster is nearby",
+      "neg": "a toaster is far away"
+    },
+    {
+      "subject": "blender",
+      "pos": "a blender is nearby",
+      "neg": "a blender is far away"
+    },
+    {
+      "subject": "teapot",
+      "pos": "a teapot is nearby",
+      "neg": "a teapot is far away"
+    },
+    {
+      "subject": "doll",
+      "pos": "a doll is nearby",
+      "neg": "a doll is far away"
+    },
+    {
+      "subject": "kite",
+      "pos": "a kite is nearby",
+      "neg": "a kite is far away"
+    },
+    {
+      "subject": "balloon",
+      "pos": "a balloon is nearby",
+      "neg": "a balloon is far away"
+    },
+    {
+      "subject": "drone",
+      "pos": "a drone is nearby",
+      "neg": "a drone is far away"
+    },
+    {
+      "subject": "robot",
+      "pos": "a robot is nearby",
+      "neg": "a robot is far away"
+    },
+    {
+      "subject": "telescope",
+      "pos": "a telescope is nearby",
+      "neg": "a telescope is far away"
+    },
+    {
+      "subject": "globe",
+      "pos": "a globe is nearby",
+      "neg": "a globe is far away"
+    },
+    {
+      "subject": "statue",
+      "pos": "a statue is nearby",
+      "neg": "a statue is far away"
+    },
+    {
+      "subject": "fountain",
+      "pos": "a fountain is nearby",
+      "neg": "a fountain is far away"
+    },
+    {
+      "subject": "bench",
+      "pos": "a bench is nearby",
+      "neg": "a bench is far away"
+    },
+    {
+      "subject": "streetlamp",
+      "pos": "a streetlamp is nearby",
+      "neg": "a streetlamp is far away"
+    },
+    {
+      "subject": "mailbox",
+      "pos": "a mailbox is nearby",
+      "neg": "a mailbox is far away"
+    },
+    {
+      "subject": "hydrant",
+      "pos": "a hydrant is nearby",
+      "neg": "a hydrant is far away"
+    },
+    {
+      "subject": "cone",
+      "pos": "a cone is nearby",
+      "neg": "a cone is far away"
+    },
+    {
+      "subject": "sign",
+      "pos": "a sign is nearby",
+      "neg": "a sign is far away"
+    },
+    {
+      "subject": "wagon",
+      "pos": "a wagon is nearby",
+      "neg": "a wagon is far away"
+    },
+    {
+      "subject": "cart",
+      "pos": "a cart is nearby",
+      "neg": "a cart is far away"
+    },
+    {
+      "subject": "anchor",
+      "pos": "an anchor is nearby",
+      "neg": "an anchor is far away"
+    },
+    {
+      "subject": "bell",
+      "pos": "a bell is nearby",
+      "neg": "a bell is far away"
+    },
+    {
+      "subject": "cage",
+      "pos": "a cage is nearby",
+      "neg": "a cage is far away"
+    },
+    {
+      "subject": "chest",
+      "pos": "a chest is nearby",
+      "neg": "a chest is far away"
+    },
+    {
+      "subject": "couch",
+      "pos": "a couch is nearby",
+      "neg": "a couch is far away"
+    },
+    {
+      "subject": "desk",
+      "pos": "a desk is nearby",
+      "neg": "a desk is far away"
+    },
+    {
+      "subject": "stool",
+      "pos": "a stool is nearby",
+      "neg": "a stool is far away"
+    },
+    {
+      "subject": "wardrobe",
+      "pos": "a wardrobe is nearby",
+      "neg": "a wardrobe is far away"
+    },
+    {
+      "subject": "trophy",
+      "pos": "a trophy is nearby",
+      "neg": "a trophy is far away"
+    }
+  ],
+  "pos": [
+    "a ball is nearby",
+    "a box is nearby",
+    "a book is nearby",
+    "a cup is nearby",
+    "a chair is nearby",
+    "a table is nearby",
+    "a lamp is nearby",
+    "a bottle is nearby",
+    "a clock is nearby",
+    "a phone is nearby",
+    "a car is nearby",
+    "a truck is nearby",
+    "a bicycle is nearby",
+    "a boat is nearby",
+    "a house is nearby",
+    "a tree is nearby",
+    "a rock is nearby",
+    "a flower is nearby",
+    "a plate is nearby",
+    "a bowl is nearby",
+    "a knife is nearby",
+    "a spoon is nearby",
+    "a fork is nearby",
+    "a pillow is nearby",
+    "a blanket is nearby",
+    "a mirror is nearby",
+    "a painting is nearby",
+    "a vase is nearby",
+    "a candle is nearby",
+    "a basket is nearby",
+    "a bucket is nearby",
+    "a ladder is nearby",
+    "a hammer is nearby",
+    "an umbrella is nearby",
+    "a backpack is nearby",
+    "a suitcase is nearby",
+    "a hat is nearby",
+    "a shoe is nearby",
+    "a glove is nearby",
+    "a watch is nearby",
+    "a ring is nearby",
+    "a key is nearby",
+    "a coin is nearby",
+    "a pen is nearby",
+    "a pencil is nearby",
+    "a brush is nearby",
+    "a comb is nearby",
+    "a mug is nearby",
+    "a kettle is nearby",
+    "a pan is nearby",
+    "a pot is nearby",
+    "a jar is nearby",
+    "a can is nearby",
+    "a barrel is nearby",
+    "a crate is nearby",
+    "a drum is nearby",
+    "a guitar is nearby",
+    "a piano is nearby",
+    "a violin is nearby",
+    "a trumpet is nearby",
+    "a camera is nearby",
+    "a television is nearby",
+    "a radio is nearby",
+    "a computer is nearby",
+    "a keyboard is nearby",
+    "a printer is nearby",
+    "a fan is nearby",
+    "a heater is nearby",
+    "a refrigerator is nearby",
+    "an oven is nearby",
+    "a microwave is nearby",
+    "a toaster is nearby",
+    "a blender is nearby",
+    "a teapot is nearby",
+    "a doll is nearby",
+    "a kite is nearby",
+    "a balloon is nearby",
+    "a drone is nearby",
+    "a robot is nearby",
+    "a telescope is nearby",
+    "a globe is nearby",
+    "a statue is nearby",
+    "a fountain is nearby",
+    "a bench is nearby",
+    "a streetlamp is nearby",
+    "a mailbox is nearby",
+    "a hydrant is nearby",
+    "a cone is nearby",
+    "a sign is nearby",
+    "a wagon is nearby",
+    "a cart is nearby",
+    "an anchor is nearby",
+    "a bell is nearby",
+    "a cage is nearby",
+    "a chest is nearby",
+    "a couch is nearby",
+    "a desk is nearby",
+    "a stool is nearby",
+    "a wardrobe is nearby",
+    "a trophy is nearby"
+  ],
+  "neg": [
+    "a ball is far away",
+    "a box is far away",
+    "a book is far away",
+    "a cup is far away",
+    "a chair is far away",
+    "a table is far away",
+    "a lamp is far away",
+    "a bottle is far away",
+    "a clock is far away",
+    "a phone is far away",
+    "a car is far away",
+    "a truck is far away",
+    "a bicycle is far away",
+    "a boat is far away",
+    "a house is far away",
+    "a tree is far away",
+    "a rock is far away",
+    "a flower is far away",
+    "a plate is far away",
+    "a bowl is far away",
+    "a knife is far away",
+    "a spoon is far away",
+    "a fork is far away",
+    "a pillow is far away",
+    "a blanket is far away",
+    "a mirror is far away",
+    "a painting is far away",
+    "a vase is far away",
+    "a candle is far away",
+    "a basket is far away",
+    "a bucket is far away",
+    "a ladder is far away",
+    "a hammer is far away",
+    "an umbrella is far away",
+    "a backpack is far away",
+    "a suitcase is far away",
+    "a hat is far away",
+    "a shoe is far away",
+    "a glove is far away",
+    "a watch is far away",
+    "a ring is far away",
+    "a key is far away",
+    "a coin is far away",
+    "a pen is far away",
+    "a pencil is far away",
+    "a brush is far away",
+    "a comb is far away",
+    "a mug is far away",
+    "a kettle is far away",
+    "a pan is far away",
+    "a pot is far away",
+    "a jar is far away",
+    "a can is far away",
+    "a barrel is far away",
+    "a crate is far away",
+    "a drum is far away",
+    "a guitar is far away",
+    "a piano is far away",
+    "a violin is far away",
+    "a trumpet is far away",
+    "a camera is far away",
+    "a television is far away",
+    "a radio is far away",
+    "a computer is far away",
+    "a keyboard is far away",
+    "a printer is far away",
+    "a fan is far away",
+    "a heater is far away",
+    "a refrigerator is far away",
+    "an oven is far away",
+    "a microwave is far away",
+    "a toaster is far away",
+    "a blender is far away",
+    "a teapot is far away",
+    "a doll is far away",
+    "a kite is far away",
+    "a balloon is far away",
+    "a drone is far away",
+    "a robot is far away",
+    "a telescope is far away",
+    "a globe is far away",
+    "a statue is far away",
+    "a fountain is far away",
+    "a bench is far away",
+    "a streetlamp is far away",
+    "a mailbox is far away",
+    "a hydrant is far away",
+    "a cone is far away",
+    "a sign is far away",
+    "a wagon is far away",
+    "a cart is far away",
+    "an anchor is far away",
+    "a bell is far away",
+    "a cage is far away",
+    "a chest is far away",
+    "a couch is far away",
+    "a desk is far away",
+    "a stool is far away",
+    "a wardrobe is far away",
+    "a trophy is far away"
+  ]
+}

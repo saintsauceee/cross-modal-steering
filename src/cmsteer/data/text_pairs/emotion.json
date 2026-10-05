@@ -1,0 +1,713 @@
+{
+ "concept": "emotion",
+ "pos_label": "happy",
+ "neg_label": "sad",
+ "template": "{article} {subject} is {emotion}",
+ "n_pairs": 100,
+ "pairs": [
+  {
+   "subject": "person",
+   "pos": "a person is happy",
+   "neg": "a person is sad"
+  },
+  {
+   "subject": "man",
+   "pos": "a man is happy",
+   "neg": "a man is sad"
+  },
+  {
+   "subject": "woman",
+   "pos": "a woman is happy",
+   "neg": "a woman is sad"
+  },
+  {
+   "subject": "boy",
+   "pos": "a boy is happy",
+   "neg": "a boy is sad"
+  },
+  {
+   "subject": "girl",
+   "pos": "a girl is happy",
+   "neg": "a girl is sad"
+  },
+  {
+   "subject": "child",
+   "pos": "a child is happy",
+   "neg": "a child is sad"
+  },
+  {
+   "subject": "baby",
+   "pos": "a baby is happy",
+   "neg": "a baby is sad"
+  },
+  {
+   "subject": "toddler",
+   "pos": "a toddler is happy",
+   "neg": "a toddler is sad"
+  },
+  {
+   "subject": "teenager",
+   "pos": "a teenager is happy",
+   "neg": "a teenager is sad"
+  },
+  {
+   "subject": "kid",
+   "pos": "a kid is happy",
+   "neg": "a kid is sad"
+  },
+  {
+   "subject": "lady",
+   "pos": "a lady is happy",
+   "neg": "a lady is sad"
+  },
+  {
+   "subject": "gentleman",
+   "pos": "a gentleman is happy",
+   "neg": "a gentleman is sad"
+  },
+  {
+   "subject": "elderly man",
+   "pos": "an elderly man is happy",
+   "neg": "an elderly man is sad"
+  },
+  {
+   "subject": "elderly woman",
+   "pos": "an elderly woman is happy",
+   "neg": "an elderly woman is sad"
+  },
+  {
+   "subject": "young man",
+   "pos": "a young man is happy",
+   "neg": "a young man is sad"
+  },
+  {
+   "subject": "young woman",
+   "pos": "a young woman is happy",
+   "neg": "a young woman is sad"
+  },
+  {
+   "subject": "old man",
+   "pos": "an old man is happy",
+   "neg": "an old man is sad"
+  },
+  {
+   "subject": "old woman",
+   "pos": "an old woman is happy",
+   "neg": "an old woman is sad"
+  },
+  {
+   "subject": "mother",
+   "pos": "a mother is happy",
+   "neg": "a mother is sad"
+  },
+  {
+   "subject": "father",
+   "pos": "a father is happy",
+   "neg": "a father is sad"
+  },
+  {
+   "subject": "grandmother",
+   "pos": "a grandmother is happy",
+   "neg": "a grandmother is sad"
+  },
+  {
+   "subject": "grandfather",
+   "pos": "a grandfather is happy",
+   "neg": "a grandfather is sad"
+  },
+  {
+   "subject": "sister",
+   "pos": "a sister is happy",
+   "neg": "a sister is sad"
+  },
+  {
+   "subject": "brother",
+   "pos": "a brother is happy",
+   "neg": "a brother is sad"
+  },
+  {
+   "subject": "daughter",
+   "pos": "a daughter is happy",
+   "neg": "a daughter is sad"
+  },
+  {
+   "subject": "son",
+   "pos": "a son is happy",
+   "neg": "a son is sad"
+  },
+  {
+   "subject": "aunt",
+   "pos": "an aunt is happy",
+   "neg": "an aunt is sad"
+  },
+  {
+   "subject": "uncle",
+   "pos": "an uncle is happy",
+   "neg": "an uncle is sad"
+  },
+  {
+   "subject": "cousin",
+   "pos": "a cousin is happy",
+   "neg": "a cousin is sad"
+  },
+  {
+   "subject": "wife",
+   "pos": "a wife is happy",
+   "neg": "a wife is sad"
+  },
+  {
+   "subject": "husband",
+   "pos": "a husband is happy",
+   "neg": "a husband is sad"
+  },
+  {
+   "subject": "niece",
+   "pos": "a niece is happy",
+   "neg": "a niece is sad"
+  },
+  {
+   "subject": "nephew",
+   "pos": "a nephew is happy",
+   "neg": "a nephew is sad"
+  },
+  {
+   "subject": "friend",
+   "pos": "a friend is happy",
+   "neg": "a friend is sad"
+  },
+  {
+   "subject": "neighbor",
+   "pos": "a neighbor is happy",
+   "neg": "a neighbor is sad"
+  },
+  {
+   "subject": "stranger",
+   "pos": "a stranger is happy",
+   "neg": "a stranger is sad"
+  },
+  {
+   "subject": "customer",
+   "pos": "a customer is happy",
+   "neg": "a customer is sad"
+  },
+  {
+   "subject": "patient",
+   "pos": "a patient is happy",
+   "neg": "a patient is sad"
+  },
+  {
+   "subject": "passenger",
+   "pos": "a passenger is happy",
+   "neg": "a passenger is sad"
+  },
+  {
+   "subject": "guest",
+   "pos": "a guest is happy",
+   "neg": "a guest is sad"
+  },
+  {
+   "subject": "colleague",
+   "pos": "a colleague is happy",
+   "neg": "a colleague is sad"
+  },
+  {
+   "subject": "roommate",
+   "pos": "a roommate is happy",
+   "neg": "a roommate is sad"
+  },
+  {
+   "subject": "classmate",
+   "pos": "a classmate is happy",
+   "neg": "a classmate is sad"
+  },
+  {
+   "subject": "teacher",
+   "pos": "a teacher is happy",
+   "neg": "a teacher is sad"
+  },
+  {
+   "subject": "doctor",
+   "pos": "a doctor is happy",
+   "neg": "a doctor is sad"
+  },
+  {
+   "subject": "nurse",
+   "pos": "a nurse is happy",
+   "neg": "a nurse is sad"
+  },
+  {
+   "subject": "farmer",
+   "pos": "a farmer is happy",
+   "neg": "a farmer is sad"
+  },
+  {
+   "subject": "artist",
+   "pos": "an artist is happy",
+   "neg": "an artist is sad"
+  },
+  {
+   "subject": "musician",
+   "pos": "a musician is happy",
+   "neg": "a musician is sad"
+  },
+  {
+   "subject": "student",
+   "pos": "a student is happy",
+   "neg": "a student is sad"
+  },
+  {
+   "subject": "chef",
+   "pos": "a chef is happy",
+   "neg": "a chef is sad"
+  },
+  {
+   "subject": "driver",
+   "pos": "a driver is happy",
+   "neg": "a driver is sad"
+  },
+  {
+   "subject": "soldier",
+   "pos": "a soldier is happy",
+   "neg": "a soldier is sad"
+  },
+  {
+   "subject": "dancer",
+   "pos": "a dancer is happy",
+   "neg": "a dancer is sad"
+  },
+  {
+   "subject": "writer",
+   "pos": "a writer is happy",
+   "neg": "a writer is sad"
+  },
+  {
+   "subject": "scientist",
+   "pos": "a scientist is happy",
+   "neg": "a scientist is sad"
+  },
+  {
+   "subject": "engineer",
+   "pos": "an engineer is happy",
+   "neg": "an engineer is sad"
+  },
+  {
+   "subject": "lawyer",
+   "pos": "a lawyer is happy",
+   "neg": "a lawyer is sad"
+  },
+  {
+   "subject": "waiter",
+   "pos": "a waiter is happy",
+   "neg": "a waiter is sad"
+  },
+  {
+   "subject": "waitress",
+   "pos": "a waitress is happy",
+   "neg": "a waitress is sad"
+  },
+  {
+   "subject": "barber",
+   "pos": "a barber is happy",
+   "neg": "a barber is sad"
+  },
+  {
+   "subject": "fisherman",
+   "pos": "a fisherman is happy",
+   "neg": "a fisherman is sad"
+  },
+  {
+   "subject": "pilot",
+   "pos": "a pilot is happy",
+   "neg": "a pilot is sad"
+  },
+  {
+   "subject": "athlete",
+   "pos": "an athlete is happy",
+   "neg": "an athlete is sad"
+  },
+  {
+   "subject": "singer",
+   "pos": "a singer is happy",
+   "neg": "a singer is sad"
+  },
+  {
+   "subject": "painter",
+   "pos": "a painter is happy",
+   "neg": "a painter is sad"
+  },
+  {
+   "subject": "actor",
+   "pos": "an actor is happy",
+   "neg": "an actor is sad"
+  },
+  {
+   "subject": "actress",
+   "pos": "an actress is happy",
+   "neg": "an actress is sad"
+  },
+  {
+   "subject": "baker",
+   "pos": "a baker is happy",
+   "neg": "a baker is sad"
+  },
+  {
+   "subject": "builder",
+   "pos": "a builder is happy",
+   "neg": "a builder is sad"
+  },
+  {
+   "subject": "gardener",
+   "pos": "a gardener is happy",
+   "neg": "a gardener is sad"
+  },
+  {
+   "subject": "librarian",
+   "pos": "a librarian is happy",
+   "neg": "a librarian is sad"
+  },
+  {
+   "subject": "mechanic",
+   "pos": "a mechanic is happy",
+   "neg": "a mechanic is sad"
+  },
+  {
+   "subject": "photographer",
+   "pos": "a photographer is happy",
+   "neg": "a photographer is sad"
+  },
+  {
+   "subject": "plumber",
+   "pos": "a plumber is happy",
+   "neg": "a plumber is sad"
+  },
+  {
+   "subject": "sailor",
+   "pos": "a sailor is happy",
+   "neg": "a sailor is sad"
+  },
+  {
+   "subject": "tailor",
+   "pos": "a tailor is happy",
+   "neg": "a tailor is sad"
+  },
+  {
+   "subject": "veterinarian",
+   "pos": "a veterinarian is happy",
+   "neg": "a veterinarian is sad"
+  },
+  {
+   "subject": "banker",
+   "pos": "a banker is happy",
+   "neg": "a banker is sad"
+  },
+  {
+   "subject": "cashier",
+   "pos": "a cashier is happy",
+   "neg": "a cashier is sad"
+  },
+  {
+   "subject": "clerk",
+   "pos": "a clerk is happy",
+   "neg": "a clerk is sad"
+  },
+  {
+   "subject": "coach",
+   "pos": "a coach is happy",
+   "neg": "a coach is sad"
+  },
+  {
+   "subject": "cook",
+   "pos": "a cook is happy",
+   "neg": "a cook is sad"
+  },
+  {
+   "subject": "dentist",
+   "pos": "a dentist is happy",
+   "neg": "a dentist is sad"
+  },
+  {
+   "subject": "editor",
+   "pos": "an editor is happy",
+   "neg": "an editor is sad"
+  },
+  {
+   "subject": "guard",
+   "pos": "a guard is happy",
+   "neg": "a guard is sad"
+  },
+  {
+   "subject": "hunter",
+   "pos": "a hunter is happy",
+   "neg": "a hunter is sad"
+  },
+  {
+   "subject": "judge",
+   "pos": "a judge is happy",
+   "neg": "a judge is sad"
+  },
+  {
+   "subject": "knight",
+   "pos": "a knight is happy",
+   "neg": "a knight is sad"
+  },
+  {
+   "subject": "monk",
+   "pos": "a monk is happy",
+   "neg": "a monk is sad"
+  },
+  {
+   "subject": "nun",
+   "pos": "a nun is happy",
+   "neg": "a nun is sad"
+  },
+  {
+   "subject": "poet",
+   "pos": "a poet is happy",
+   "neg": "a poet is sad"
+  },
+  {
+   "subject": "priest",
+   "pos": "a priest is happy",
+   "neg": "a priest is sad"
+  },
+  {
+   "subject": "professor",
+   "pos": "a professor is happy",
+   "neg": "a professor is sad"
+  },
+  {
+   "subject": "referee",
+   "pos": "a referee is happy",
+   "neg": "a referee is sad"
+  },
+  {
+   "subject": "reporter",
+   "pos": "a reporter is happy",
+   "neg": "a reporter is sad"
+  },
+  {
+   "subject": "surgeon",
+   "pos": "a surgeon is happy",
+   "neg": "a surgeon is sad"
+  },
+  {
+   "subject": "tourist",
+   "pos": "a tourist is happy",
+   "neg": "a tourist is sad"
+  },
+  {
+   "subject": "firefighter",
+   "pos": "a firefighter is happy",
+   "neg": "a firefighter is sad"
+  },
+  {
+   "subject": "carpenter",
+   "pos": "a carpenter is happy",
+   "neg": "a carpenter is sad"
+  }
+ ],
+ "pos": [
+  "a person is happy",
+  "a man is happy",
+  "a woman is happy",
+  "a boy is happy",
+  "a girl is happy",
+  "a child is happy",
+  "a baby is happy",
+  "a toddler is happy",
+  "a teenager is happy",
+  "a kid is happy",
+  "a lady is happy",
+  "a gentleman is happy",
+  "an elderly man is happy",
+  "an elderly woman is happy",
+  "a young man is happy",
+  "a young woman is happy",
+  "an old man is happy",
+  "an old woman is happy",
+  "a mother is happy",
+  "a father is happy",
+  "a grandmother is happy",
+  "a grandfather is happy",
+  "a sister is happy",
+  "a brother is happy",
+  "a daughter is happy",
+  "a son is happy",
+  "an aunt is happy",
+  "an uncle is happy",
+  "a cousin is happy",
+  "a wife is happy",
+  "a husband is happy",
+  "a niece is happy",
+  "a nephew is happy",
+  "a friend is happy",
+  "a neighbor is happy",
+  "a stranger is happy",
+  "a customer is happy",
+  "a patient is happy",
+  "a passenger is happy",
+  "a guest is happy",
+  "a colleague is happy",
+  "a roommate is happy",
+  "a classmate is happy",
+  "a teacher is happy",
+  "a doctor is happy",
+  "a nurse is happy",
+  "a farmer is happy",
+  "an artist is happy",
+  "a musician is happy",
+  "a student is happy",
+  "a chef is happy",
+  "a driver is happy",
+  "a soldier is happy",
+  "a dancer is happy",
+  "a writer is happy",
+  "a scientist is happy",
+  "an engineer is happy",
+  "a lawyer is happy",
+  "a waiter is happy",
+  "a waitress is happy",
+  "a barber is happy",
+  "a fisherman is happy",
+  "a pilot is happy",
+  "an athlete is happy",
+  "a singer is happy",
+  "a painter is happy",
+  "an actor is happy",
+  "an actress is happy",
+  "a baker is happy",
+  "a builder is happy",
+  "a gardener is happy",
+  "a librarian is happy",
+  "a mechanic is happy",
+  "a photographer is happy",
+  "a plumber is happy",
+  "a sailor is happy",
+  "a tailor is happy",
+  "a veterinarian is happy",
+  "a banker is happy",
+  "a cashier is happy",
+  "a clerk is happy",
+  "a coach is happy",
+  "a cook is happy",
+  "a dentist is happy",
+  "an editor is happy",
+  "a guard is happy",
+  "a hunter is happy",
+  "a judge is happy",
+  "a knight is happy",
+  "a monk is happy",
+  "a nun is happy",
+  "a poet is happy",
+  "a priest is happy",
+  "a professor is happy",
+  "a referee is happy",
+  "a reporter is happy",
+  "a surgeon is happy",
+  "a tourist is happy",
+  "a firefighter is happy",
+  "a carpenter is happy"
+ ],
+ "neg": [
+  "a person is sad",
+  "a man is sad",
+  "a woman is sad",
+  "a boy is sad",
+  "a girl is sad",
+  "a child is sad",
+  "a baby is sad",
+  "a toddler is sad",
+  "a teenager is sad",
+  "a kid is sad",
+  "a lady is sad",
+  "a gentleman is sad",
+  "an elderly man is sad",
+  "an elderly woman is sad",
+  "a young man is sad",
+  "a young woman is sad",
+  "an old man is sad",
+  "an old woman is sad",
+  "a mother is sad",
+  "a father is sad",
+  "a grandmother is sad",
+  "a grandfather is sad",
+  "a sister is sad",
+  "a brother is sad",
+  "a daughter is sad",
+  "a son is sad",
+  "an aunt is sad",
+  "an uncle is sad",
+  "a cousin is sad",
+  "a wife is sad",
+  "a husband is sad",
+  "a niece is sad",
+  "a nephew is sad",
+  "a friend is sad",
+  "a neighbor is sad",
+  "a stranger is sad",
+  "a customer is sad",
+  "a patient is sad",
+  "a passenger is sad",
+  "a guest is sad",
+  "a colleague is sad",
+  "a roommate is sad",
+  "a classmate is sad",
+  "a teacher is sad",
+  "a doctor is sad",
+  "a nurse is sad",
+  "a farmer is sad",
+  "an artist is sad",
+  "a musician is sad",
+  "a student is sad",
+  "a chef is sad",
+  "a driver is sad",
+  "a soldier is sad",
+  "a dancer is sad",
+  "a writer is sad",
+  "a scientist is sad",
+  "an engineer is sad",
+  "a lawyer is sad",
+  "a waiter is sad",
+  "a waitress is sad",
+  "a barber is sad",
+  "a fisherman is sad",
+  "a pilot is sad",
+  "an athlete is sad",
+  "a singer is sad",
+  "a painter is sad",
+  "an actor is sad",
+  "an actress is sad",
+  "a baker is sad",
+  "a builder is sad",
+  "a gardener is sad",
+  "a librarian is sad",
+  "a mechanic is sad",
+  "a photographer is sad",
+  "a plumber is sad",
+  "a sailor is sad",
+  "a tailor is sad",
+  "a veterinarian is sad",
+  "a banker is sad",
+  "a cashier is sad",
+  "a clerk is sad",
+  "a coach is sad",
+  "a cook is sad",
+  "a dentist is sad",
+  "an editor is sad",
+  "a guard is sad",
+  "a hunter is sad",
+  "a judge is sad",
+  "a knight is sad",
+  "a monk is sad",
+  "a nun is sad",
+  "a poet is sad",
+  "a priest is sad",
+  "a professor is sad",
+  "a referee is sad",
+  "a reporter is sad",
+  "a surgeon is sad",
+  "a tourist is sad",
+  "a firefighter is sad",
+  "a carpenter is sad"
+ ]
+}

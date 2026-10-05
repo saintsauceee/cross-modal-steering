@@ -1,0 +1,713 @@
+{
+  "concept": "chaos",
+  "pos_label": "chaotic",
+  "neg_label": "peaceful",
+  "template": "{art} {subject} is {chaos}",
+  "n_pairs": 100,
+  "pairs": [
+    {
+      "subject": "room",
+      "pos": "a room is chaotic",
+      "neg": "a room is peaceful"
+    },
+    {
+      "subject": "kitchen",
+      "pos": "a kitchen is chaotic",
+      "neg": "a kitchen is peaceful"
+    },
+    {
+      "subject": "office",
+      "pos": "an office is chaotic",
+      "neg": "an office is peaceful"
+    },
+    {
+      "subject": "bedroom",
+      "pos": "a bedroom is chaotic",
+      "neg": "a bedroom is peaceful"
+    },
+    {
+      "subject": "bathroom",
+      "pos": "a bathroom is chaotic",
+      "neg": "a bathroom is peaceful"
+    },
+    {
+      "subject": "garage",
+      "pos": "a garage is chaotic",
+      "neg": "a garage is peaceful"
+    },
+    {
+      "subject": "basement",
+      "pos": "a basement is chaotic",
+      "neg": "a basement is peaceful"
+    },
+    {
+      "subject": "attic",
+      "pos": "an attic is chaotic",
+      "neg": "an attic is peaceful"
+    },
+    {
+      "subject": "hallway",
+      "pos": "a hallway is chaotic",
+      "neg": "a hallway is peaceful"
+    },
+    {
+      "subject": "classroom",
+      "pos": "a classroom is chaotic",
+      "neg": "a classroom is peaceful"
+    },
+    {
+      "subject": "library",
+      "pos": "a library is chaotic",
+      "neg": "a library is peaceful"
+    },
+    {
+      "subject": "restaurant",
+      "pos": "a restaurant is chaotic",
+      "neg": "a restaurant is peaceful"
+    },
+    {
+      "subject": "cafe",
+      "pos": "a cafe is chaotic",
+      "neg": "a cafe is peaceful"
+    },
+    {
+      "subject": "bar",
+      "pos": "a bar is chaotic",
+      "neg": "a bar is peaceful"
+    },
+    {
+      "subject": "shop",
+      "pos": "a shop is chaotic",
+      "neg": "a shop is peaceful"
+    },
+    {
+      "subject": "market",
+      "pos": "a market is chaotic",
+      "neg": "a market is peaceful"
+    },
+    {
+      "subject": "mall",
+      "pos": "a mall is chaotic",
+      "neg": "a mall is peaceful"
+    },
+    {
+      "subject": "street",
+      "pos": "a street is chaotic",
+      "neg": "a street is peaceful"
+    },
+    {
+      "subject": "alley",
+      "pos": "an alley is chaotic",
+      "neg": "an alley is peaceful"
+    },
+    {
+      "subject": "road",
+      "pos": "a road is chaotic",
+      "neg": "a road is peaceful"
+    },
+    {
+      "subject": "highway",
+      "pos": "a highway is chaotic",
+      "neg": "a highway is peaceful"
+    },
+    {
+      "subject": "park",
+      "pos": "a park is chaotic",
+      "neg": "a park is peaceful"
+    },
+    {
+      "subject": "garden",
+      "pos": "a garden is chaotic",
+      "neg": "a garden is peaceful"
+    },
+    {
+      "subject": "yard",
+      "pos": "a yard is chaotic",
+      "neg": "a yard is peaceful"
+    },
+    {
+      "subject": "playground",
+      "pos": "a playground is chaotic",
+      "neg": "a playground is peaceful"
+    },
+    {
+      "subject": "plaza",
+      "pos": "a plaza is chaotic",
+      "neg": "a plaza is peaceful"
+    },
+    {
+      "subject": "square",
+      "pos": "a square is chaotic",
+      "neg": "a square is peaceful"
+    },
+    {
+      "subject": "station",
+      "pos": "a station is chaotic",
+      "neg": "a station is peaceful"
+    },
+    {
+      "subject": "airport",
+      "pos": "an airport is chaotic",
+      "neg": "an airport is peaceful"
+    },
+    {
+      "subject": "harbor",
+      "pos": "a harbor is chaotic",
+      "neg": "a harbor is peaceful"
+    },
+    {
+      "subject": "dock",
+      "pos": "a dock is chaotic",
+      "neg": "a dock is peaceful"
+    },
+    {
+      "subject": "factory",
+      "pos": "a factory is chaotic",
+      "neg": "a factory is peaceful"
+    },
+    {
+      "subject": "warehouse",
+      "pos": "a warehouse is chaotic",
+      "neg": "a warehouse is peaceful"
+    },
+    {
+      "subject": "workshop",
+      "pos": "a workshop is chaotic",
+      "neg": "a workshop is peaceful"
+    },
+    {
+      "subject": "studio",
+      "pos": "a studio is chaotic",
+      "neg": "a studio is peaceful"
+    },
+    {
+      "subject": "gym",
+      "pos": "a gym is chaotic",
+      "neg": "a gym is peaceful"
+    },
+    {
+      "subject": "stadium",
+      "pos": "a stadium is chaotic",
+      "neg": "a stadium is peaceful"
+    },
+    {
+      "subject": "theater",
+      "pos": "a theater is chaotic",
+      "neg": "a theater is peaceful"
+    },
+    {
+      "subject": "cinema",
+      "pos": "a cinema is chaotic",
+      "neg": "a cinema is peaceful"
+    },
+    {
+      "subject": "museum",
+      "pos": "a museum is chaotic",
+      "neg": "a museum is peaceful"
+    },
+    {
+      "subject": "gallery",
+      "pos": "a gallery is chaotic",
+      "neg": "a gallery is peaceful"
+    },
+    {
+      "subject": "church",
+      "pos": "a church is chaotic",
+      "neg": "a church is peaceful"
+    },
+    {
+      "subject": "temple",
+      "pos": "a temple is chaotic",
+      "neg": "a temple is peaceful"
+    },
+    {
+      "subject": "hospital",
+      "pos": "a hospital is chaotic",
+      "neg": "a hospital is peaceful"
+    },
+    {
+      "subject": "clinic",
+      "pos": "a clinic is chaotic",
+      "neg": "a clinic is peaceful"
+    },
+    {
+      "subject": "school",
+      "pos": "a school is chaotic",
+      "neg": "a school is peaceful"
+    },
+    {
+      "subject": "campus",
+      "pos": "a campus is chaotic",
+      "neg": "a campus is peaceful"
+    },
+    {
+      "subject": "city",
+      "pos": "a city is chaotic",
+      "neg": "a city is peaceful"
+    },
+    {
+      "subject": "town",
+      "pos": "a town is chaotic",
+      "neg": "a town is peaceful"
+    },
+    {
+      "subject": "village",
+      "pos": "a village is chaotic",
+      "neg": "a village is peaceful"
+    },
+    {
+      "subject": "neighborhood",
+      "pos": "a neighborhood is chaotic",
+      "neg": "a neighborhood is peaceful"
+    },
+    {
+      "subject": "downtown",
+      "pos": "a downtown is chaotic",
+      "neg": "a downtown is peaceful"
+    },
+    {
+      "subject": "suburb",
+      "pos": "a suburb is chaotic",
+      "neg": "a suburb is peaceful"
+    },
+    {
+      "subject": "beach",
+      "pos": "a beach is chaotic",
+      "neg": "a beach is peaceful"
+    },
+    {
+      "subject": "forest",
+      "pos": "a forest is chaotic",
+      "neg": "a forest is peaceful"
+    },
+    {
+      "subject": "desert",
+      "pos": "a desert is chaotic",
+      "neg": "a desert is peaceful"
+    },
+    {
+      "subject": "valley",
+      "pos": "a valley is chaotic",
+      "neg": "a valley is peaceful"
+    },
+    {
+      "subject": "field",
+      "pos": "a field is chaotic",
+      "neg": "a field is peaceful"
+    },
+    {
+      "subject": "meadow",
+      "pos": "a meadow is chaotic",
+      "neg": "a meadow is peaceful"
+    },
+    {
+      "subject": "farm",
+      "pos": "a farm is chaotic",
+      "neg": "a farm is peaceful"
+    },
+    {
+      "subject": "ranch",
+      "pos": "a ranch is chaotic",
+      "neg": "a ranch is peaceful"
+    },
+    {
+      "subject": "barn",
+      "pos": "a barn is chaotic",
+      "neg": "a barn is peaceful"
+    },
+    {
+      "subject": "stable",
+      "pos": "a stable is chaotic",
+      "neg": "a stable is peaceful"
+    },
+    {
+      "subject": "zoo",
+      "pos": "a zoo is chaotic",
+      "neg": "a zoo is peaceful"
+    },
+    {
+      "subject": "aquarium",
+      "pos": "an aquarium is chaotic",
+      "neg": "an aquarium is peaceful"
+    },
+    {
+      "subject": "closet",
+      "pos": "a closet is chaotic",
+      "neg": "a closet is peaceful"
+    },
+    {
+      "subject": "pantry",
+      "pos": "a pantry is chaotic",
+      "neg": "a pantry is peaceful"
+    },
+    {
+      "subject": "cellar",
+      "pos": "a cellar is chaotic",
+      "neg": "a cellar is peaceful"
+    },
+    {
+      "subject": "lobby",
+      "pos": "a lobby is chaotic",
+      "neg": "a lobby is peaceful"
+    },
+    {
+      "subject": "corridor",
+      "pos": "a corridor is chaotic",
+      "neg": "a corridor is peaceful"
+    },
+    {
+      "subject": "courtyard",
+      "pos": "a courtyard is chaotic",
+      "neg": "a courtyard is peaceful"
+    },
+    {
+      "subject": "balcony",
+      "pos": "a balcony is chaotic",
+      "neg": "a balcony is peaceful"
+    },
+    {
+      "subject": "rooftop",
+      "pos": "a rooftop is chaotic",
+      "neg": "a rooftop is peaceful"
+    },
+    {
+      "subject": "kitchenette",
+      "pos": "a kitchenette is chaotic",
+      "neg": "a kitchenette is peaceful"
+    },
+    {
+      "subject": "laundry",
+      "pos": "a laundry is chaotic",
+      "neg": "a laundry is peaceful"
+    },
+    {
+      "subject": "nursery",
+      "pos": "a nursery is chaotic",
+      "neg": "a nursery is peaceful"
+    },
+    {
+      "subject": "dormitory",
+      "pos": "a dormitory is chaotic",
+      "neg": "a dormitory is peaceful"
+    },
+    {
+      "subject": "cafeteria",
+      "pos": "a cafeteria is chaotic",
+      "neg": "a cafeteria is peaceful"
+    },
+    {
+      "subject": "canteen",
+      "pos": "a canteen is chaotic",
+      "neg": "a canteen is peaceful"
+    },
+    {
+      "subject": "lounge",
+      "pos": "a lounge is chaotic",
+      "neg": "a lounge is peaceful"
+    },
+    {
+      "subject": "crowd",
+      "pos": "a crowd is chaotic",
+      "neg": "a crowd is peaceful"
+    },
+    {
+      "subject": "party",
+      "pos": "a party is chaotic",
+      "neg": "a party is peaceful"
+    },
+    {
+      "subject": "festival",
+      "pos": "a festival is chaotic",
+      "neg": "a festival is peaceful"
+    },
+    {
+      "subject": "parade",
+      "pos": "a parade is chaotic",
+      "neg": "a parade is peaceful"
+    },
+    {
+      "subject": "protest",
+      "pos": "a protest is chaotic",
+      "neg": "a protest is peaceful"
+    },
+    {
+      "subject": "concert",
+      "pos": "a concert is chaotic",
+      "neg": "a concert is peaceful"
+    },
+    {
+      "subject": "market stall",
+      "pos": "a market stall is chaotic",
+      "neg": "a market stall is peaceful"
+    },
+    {
+      "subject": "newsroom",
+      "pos": "a newsroom is chaotic",
+      "neg": "a newsroom is peaceful"
+    },
+    {
+      "subject": "trading floor",
+      "pos": "a trading floor is chaotic",
+      "neg": "a trading floor is peaceful"
+    },
+    {
+      "subject": "construction site",
+      "pos": "a construction site is chaotic",
+      "neg": "a construction site is peaceful"
+    },
+    {
+      "subject": "battlefield",
+      "pos": "a battlefield is chaotic",
+      "neg": "a battlefield is peaceful"
+    },
+    {
+      "subject": "carnival",
+      "pos": "a carnival is chaotic",
+      "neg": "a carnival is peaceful"
+    },
+    {
+      "subject": "fairground",
+      "pos": "a fairground is chaotic",
+      "neg": "a fairground is peaceful"
+    },
+    {
+      "subject": "bazaar",
+      "pos": "a bazaar is chaotic",
+      "neg": "a bazaar is peaceful"
+    },
+    {
+      "subject": "terminal",
+      "pos": "a terminal is chaotic",
+      "neg": "a terminal is peaceful"
+    },
+    {
+      "subject": "platform",
+      "pos": "a platform is chaotic",
+      "neg": "a platform is peaceful"
+    },
+    {
+      "subject": "intersection",
+      "pos": "an intersection is chaotic",
+      "neg": "an intersection is peaceful"
+    },
+    {
+      "subject": "junkyard",
+      "pos": "a junkyard is chaotic",
+      "neg": "a junkyard is peaceful"
+    },
+    {
+      "subject": "scrapyard",
+      "pos": "a scrapyard is chaotic",
+      "neg": "a scrapyard is peaceful"
+    },
+    {
+      "subject": "dumpster",
+      "pos": "a dumpster is chaotic",
+      "neg": "a dumpster is peaceful"
+    }
+  ],
+  "pos": [
+    "a room is chaotic",
+    "a kitchen is chaotic",
+    "an office is chaotic",
+    "a bedroom is chaotic",
+    "a bathroom is chaotic",
+    "a garage is chaotic",
+    "a basement is chaotic",
+    "an attic is chaotic",
+    "a hallway is chaotic",
+    "a classroom is chaotic",
+    "a library is chaotic",
+    "a restaurant is chaotic",
+    "a cafe is chaotic",
+    "a bar is chaotic",
+    "a shop is chaotic",
+    "a market is chaotic",
+    "a mall is chaotic",
+    "a street is chaotic",
+    "an alley is chaotic",
+    "a road is chaotic",
+    "a highway is chaotic",
+    "a park is chaotic",
+    "a garden is chaotic",
+    "a yard is chaotic",
+    "a playground is chaotic",
+    "a plaza is chaotic",
+    "a square is chaotic",
+    "a station is chaotic",
+    "an airport is chaotic",
+    "a harbor is chaotic",
+    "a dock is chaotic",
+    "a factory is chaotic",
+    "a warehouse is chaotic",
+    "a workshop is chaotic",
+    "a studio is chaotic",
+    "a gym is chaotic",
+    "a stadium is chaotic",
+    "a theater is chaotic",
+    "a cinema is chaotic",
+    "a museum is chaotic",
+    "a gallery is chaotic",
+    "a church is chaotic",
+    "a temple is chaotic",
+    "a hospital is chaotic",
+    "a clinic is chaotic",
+    "a school is chaotic",
+    "a campus is chaotic",
+    "a city is chaotic",
+    "a town is chaotic",
+    "a village is chaotic",
+    "a neighborhood is chaotic",
+    "a downtown is chaotic",
+    "a suburb is chaotic",
+    "a beach is chaotic",
+    "a forest is chaotic",
+    "a desert is chaotic",
+    "a valley is chaotic",
+    "a field is chaotic",
+    "a meadow is chaotic",
+    "a farm is chaotic",
+    "a ranch is chaotic",
+    "a barn is chaotic",
+    "a stable is chaotic",
+    "a zoo is chaotic",
+    "an aquarium is chaotic",
+    "a closet is chaotic",
+    "a pantry is chaotic",
+    "a cellar is chaotic",
+    "a lobby is chaotic",
+    "a corridor is chaotic",
+    "a courtyard is chaotic",
+    "a balcony is chaotic",
+    "a rooftop is chaotic",
+    "a kitchenette is chaotic",
+    "a laundry is chaotic",
+    "a nursery is chaotic",
+    "a dormitory is chaotic",
+    "a cafeteria is chaotic",
+    "a canteen is chaotic",
+    "a lounge is chaotic",
+    "a crowd is chaotic",
+    "a party is chaotic",
+    "a festival is chaotic",
+    "a parade is chaotic",
+    "a protest is chaotic",
+    "a concert is chaotic",
+    "a market stall is chaotic",
+    "a newsroom is chaotic",
+    "a trading floor is chaotic",
+    "a construction site is chaotic",
+    "a battlefield is chaotic",
+    "a carnival is chaotic",
+    "a fairground is chaotic",
+    "a bazaar is chaotic",
+    "a terminal is chaotic",
+    "a platform is chaotic",
+    "an intersection is chaotic",
+    "a junkyard is chaotic",
+    "a scrapyard is chaotic",
+    "a dumpster is chaotic"
+  ],
+  "neg": [
+    "a room is peaceful",
+    "a kitchen is peaceful",
+    "an office is peaceful",
+    "a bedroom is peaceful",
+    "a bathroom is peaceful",
+    "a garage is peaceful",
+    "a basement is peaceful",
+    "an attic is peaceful",
+    "a hallway is peaceful",
+    "a classroom is peaceful",
+    "a library is peaceful",
+    "a restaurant is peaceful",
+    "a cafe is peaceful",
+    "a bar is peaceful",
+    "a shop is peaceful",
+    "a market is peaceful",
+    "a mall is peaceful",
+    "a street is peaceful",
+    "an alley is peaceful",
+    "a road is peaceful",
+    "a highway is peaceful",
+    "a park is peaceful",
+    "a garden is peaceful",
+    "a yard is peaceful",
+    "a playground is peaceful",
+    "a plaza is peaceful",
+    "a square is peaceful",
+    "a station is peaceful",
+    "an airport is peaceful",
+    "a harbor is peaceful",
+    "a dock is peaceful",
+    "a factory is peaceful",
+    "a warehouse is peaceful",
+    "a workshop is peaceful",
+    "a studio is peaceful",
+    "a gym is peaceful",
+    "a stadium is peaceful",
+    "a theater is peaceful",
+    "a cinema is peaceful",
+    "a museum is peaceful",
+    "a gallery is peaceful",
+    "a church is peaceful",
+    "a temple is peaceful",
+    "a hospital is peaceful",
+    "a clinic is peaceful",
+    "a school is peaceful",
+    "a campus is peaceful",
+    "a city is peaceful",
+    "a town is peaceful",
+    "a village is peaceful",
+    "a neighborhood is peaceful",
+    "a downtown is peaceful",
+    "a suburb is peaceful",
+    "a beach is peaceful",
+    "a forest is peaceful",
+    "a desert is peaceful",
+    "a valley is peaceful",
+    "a field is peaceful",
+    "a meadow is peaceful",
+    "a farm is peaceful",
+    "a ranch is peaceful",
+    "a barn is peaceful",
+    "a stable is peaceful",
+    "a zoo is peaceful",
+    "an aquarium is peaceful",
+    "a closet is peaceful",
+    "a pantry is peaceful",
+    "a cellar is peaceful",
+    "a lobby is peaceful",
+    "a corridor is peaceful",
+    "a courtyard is peaceful",
+    "a balcony is peaceful",
+    "a rooftop is peaceful",
+    "a kitchenette is peaceful",
+    "a laundry is peaceful",
+    "a nursery is peaceful",
+    "a dormitory is peaceful",
+    "a cafeteria is peaceful",
+    "a canteen is peaceful",
+    "a lounge is peaceful",
+    "a crowd is peaceful",
+    "a party is peaceful",
+    "a festival is peaceful",
+    "a parade is peaceful",
+    "a protest is peaceful",
+    "a concert is peaceful",
+    "a market stall is peaceful",
+    "a newsroom is peaceful",
+    "a trading floor is peaceful",
+    "a construction site is peaceful",
+    "a battlefield is peaceful",
+    "a carnival is peaceful",
+    "a fairground is peaceful",
+    "a bazaar is peaceful",
+    "a terminal is peaceful",
+    "a platform is peaceful",
+    "an intersection is peaceful",
+    "a junkyard is peaceful",
+    "a scrapyard is peaceful",
+    "a dumpster is peaceful"
+  ]
+}

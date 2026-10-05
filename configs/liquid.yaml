@@ -1,0 +1,32 @@
+# Liquid (Junfeng5/Liquid_V1_7B): Gemma-7B backbone, 28 layers, VQGAN image tokens.
+# Paper Tables 4 and 5. Layer indices are 0-based.
+model: liquid
+model_args:
+  image_grid: 32             # 32 x 32 image tokens, 512 x 512 px
+  guidance: 7.0
+  top_k: 4096
+  top_p: 0.96
+  temperature: 0.99
+
+concepts: [emotion, age, cleanness, chaos, size, near_far, spatial_lr, color]
+
+layer_configs:
+  L7: [7]
+  L14: [14]
+  L21: [21]
+  early: [5, 6, 7, 8]
+  mid: [12, 13, 14, 15]
+  late: [19, 20, 21, 22]
+  all: all
+
+alphas:
+  txt2txt: {max: 25, step: 5}
+  img2txt: {max: 25, step: 5}
+  img2img: {max: 0.5, step: 0.1}
+  txt2img: {max: 1.5, step: 0.3}
+
+text: {max_new_tokens: 96}
+seed: 42
+# image_batch 50 = the paper's runs; seeded images depend on it.
+text_batch: 96
+image_batch: 50

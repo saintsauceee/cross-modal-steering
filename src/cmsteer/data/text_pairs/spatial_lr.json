@@ -1,0 +1,713 @@
+{
+  "concept": "spatial_lr",
+  "pos_label": "right",
+  "neg_label": "left",
+  "template": "{art} {subject} is on the {spatial_lr}",
+  "n_pairs": 100,
+  "pairs": [
+    {
+      "subject": "ball",
+      "pos": "a ball is on the right",
+      "neg": "a ball is on the left"
+    },
+    {
+      "subject": "box",
+      "pos": "a box is on the right",
+      "neg": "a box is on the left"
+    },
+    {
+      "subject": "book",
+      "pos": "a book is on the right",
+      "neg": "a book is on the left"
+    },
+    {
+      "subject": "cup",
+      "pos": "a cup is on the right",
+      "neg": "a cup is on the left"
+    },
+    {
+      "subject": "chair",
+      "pos": "a chair is on the right",
+      "neg": "a chair is on the left"
+    },
+    {
+      "subject": "table",
+      "pos": "a table is on the right",
+      "neg": "a table is on the left"
+    },
+    {
+      "subject": "lamp",
+      "pos": "a lamp is on the right",
+      "neg": "a lamp is on the left"
+    },
+    {
+      "subject": "bottle",
+      "pos": "a bottle is on the right",
+      "neg": "a bottle is on the left"
+    },
+    {
+      "subject": "clock",
+      "pos": "a clock is on the right",
+      "neg": "a clock is on the left"
+    },
+    {
+      "subject": "phone",
+      "pos": "a phone is on the right",
+      "neg": "a phone is on the left"
+    },
+    {
+      "subject": "car",
+      "pos": "a car is on the right",
+      "neg": "a car is on the left"
+    },
+    {
+      "subject": "truck",
+      "pos": "a truck is on the right",
+      "neg": "a truck is on the left"
+    },
+    {
+      "subject": "bicycle",
+      "pos": "a bicycle is on the right",
+      "neg": "a bicycle is on the left"
+    },
+    {
+      "subject": "boat",
+      "pos": "a boat is on the right",
+      "neg": "a boat is on the left"
+    },
+    {
+      "subject": "house",
+      "pos": "a house is on the right",
+      "neg": "a house is on the left"
+    },
+    {
+      "subject": "tree",
+      "pos": "a tree is on the right",
+      "neg": "a tree is on the left"
+    },
+    {
+      "subject": "rock",
+      "pos": "a rock is on the right",
+      "neg": "a rock is on the left"
+    },
+    {
+      "subject": "flower",
+      "pos": "a flower is on the right",
+      "neg": "a flower is on the left"
+    },
+    {
+      "subject": "plate",
+      "pos": "a plate is on the right",
+      "neg": "a plate is on the left"
+    },
+    {
+      "subject": "bowl",
+      "pos": "a bowl is on the right",
+      "neg": "a bowl is on the left"
+    },
+    {
+      "subject": "knife",
+      "pos": "a knife is on the right",
+      "neg": "a knife is on the left"
+    },
+    {
+      "subject": "spoon",
+      "pos": "a spoon is on the right",
+      "neg": "a spoon is on the left"
+    },
+    {
+      "subject": "fork",
+      "pos": "a fork is on the right",
+      "neg": "a fork is on the left"
+    },
+    {
+      "subject": "pillow",
+      "pos": "a pillow is on the right",
+      "neg": "a pillow is on the left"
+    },
+    {
+      "subject": "blanket",
+      "pos": "a blanket is on the right",
+      "neg": "a blanket is on the left"
+    },
+    {
+      "subject": "mirror",
+      "pos": "a mirror is on the right",
+      "neg": "a mirror is on the left"
+    },
+    {
+      "subject": "painting",
+      "pos": "a painting is on the right",
+      "neg": "a painting is on the left"
+    },
+    {
+      "subject": "vase",
+      "pos": "a vase is on the right",
+      "neg": "a vase is on the left"
+    },
+    {
+      "subject": "candle",
+      "pos": "a candle is on the right",
+      "neg": "a candle is on the left"
+    },
+    {
+      "subject": "basket",
+      "pos": "a basket is on the right",
+      "neg": "a basket is on the left"
+    },
+    {
+      "subject": "bucket",
+      "pos": "a bucket is on the right",
+      "neg": "a bucket is on the left"
+    },
+    {
+      "subject": "ladder",
+      "pos": "a ladder is on the right",
+      "neg": "a ladder is on the left"
+    },
+    {
+      "subject": "hammer",
+      "pos": "a hammer is on the right",
+      "neg": "a hammer is on the left"
+    },
+    {
+      "subject": "umbrella",
+      "pos": "an umbrella is on the right",
+      "neg": "an umbrella is on the left"
+    },
+    {
+      "subject": "backpack",
+      "pos": "a backpack is on the right",
+      "neg": "a backpack is on the left"
+    },
+    {
+      "subject": "suitcase",
+      "pos": "a suitcase is on the right",
+      "neg": "a suitcase is on the left"
+    },
+    {
+      "subject": "hat",
+      "pos": "a hat is on the right",
+      "neg": "a hat is on the left"
+    },
+    {
+      "subject": "shoe",
+      "pos": "a shoe is on the right",
+      "neg": "a shoe is on the left"
+    },
+    {
+      "subject": "glove",
+      "pos": "a glove is on the right",
+      "neg": "a glove is on the left"
+    },
+    {
+      "subject": "watch",
+      "pos": "a watch is on the right",
+      "neg": "a watch is on the left"
+    },
+    {
+      "subject": "ring",
+      "pos": "a ring is on the right",
+      "neg": "a ring is on the left"
+    },
+    {
+      "subject": "key",
+      "pos": "a key is on the right",
+      "neg": "a key is on the left"
+    },
+    {
+      "subject": "coin",
+      "pos": "a coin is on the right",
+      "neg": "a coin is on the left"
+    },
+    {
+      "subject": "pen",
+      "pos": "a pen is on the right",
+      "neg": "a pen is on the left"
+    },
+    {
+      "subject": "pencil",
+      "pos": "a pencil is on the right",
+      "neg": "a pencil is on the left"
+    },
+    {
+      "subject": "brush",
+      "pos": "a brush is on the right",
+      "neg": "a brush is on the left"
+    },
+    {
+      "subject": "comb",
+      "pos": "a comb is on the right",
+      "neg": "a comb is on the left"
+    },
+    {
+      "subject": "mug",
+      "pos": "a mug is on the right",
+      "neg": "a mug is on the left"
+    },
+    {
+      "subject": "kettle",
+      "pos": "a kettle is on the right",
+      "neg": "a kettle is on the left"
+    },
+    {
+      "subject": "pan",
+      "pos": "a pan is on the right",
+      "neg": "a pan is on the left"
+    },
+    {
+      "subject": "pot",
+      "pos": "a pot is on the right",
+      "neg": "a pot is on the left"
+    },
+    {
+      "subject": "jar",
+      "pos": "a jar is on the right",
+      "neg": "a jar is on the left"
+    },
+    {
+      "subject": "can",
+      "pos": "a can is on the right",
+      "neg": "a can is on the left"
+    },
+    {
+      "subject": "barrel",
+      "pos": "a barrel is on the right",
+      "neg": "a barrel is on the left"
+    },
+    {
+      "subject": "crate",
+      "pos": "a crate is on the right",
+      "neg": "a crate is on the left"
+    },
+    {
+      "subject": "drum",
+      "pos": "a drum is on the right",
+      "neg": "a drum is on the left"
+    },
+    {
+      "subject": "guitar",
+      "pos": "a guitar is on the right",
+      "neg": "a guitar is on the left"
+    },
+    {
+      "subject": "piano",
+      "pos": "a piano is on the right",
+      "neg": "a piano is on the left"
+    },
+    {
+      "subject": "violin",
+      "pos": "a violin is on the right",
+      "neg": "a violin is on the left"
+    },
+    {
+      "subject": "trumpet",
+      "pos": "a trumpet is on the right",
+      "neg": "a trumpet is on the left"
+    },
+    {
+      "subject": "camera",
+      "pos": "a camera is on the right",
+      "neg": "a camera is on the left"
+    },
+    {
+      "subject": "television",
+      "pos": "a television is on the right",
+      "neg": "a television is on the left"
+    },
+    {
+      "subject": "radio",
+      "pos": "a radio is on the right",
+      "neg": "a radio is on the left"
+    },
+    {
+      "subject": "computer",
+      "pos": "a computer is on the right",
+      "neg": "a computer is on the left"
+    },
+    {
+      "subject": "keyboard",
+      "pos": "a keyboard is on the right",
+      "neg": "a keyboard is on the left"
+    },
+    {
+      "subject": "printer",
+      "pos": "a printer is on the right",
+      "neg": "a printer is on the left"
+    },
+    {
+      "subject": "fan",
+      "pos": "a fan is on the right",
+      "neg": "a fan is on the left"
+    },
+    {
+      "subject": "heater",
+      "pos": "a heater is on the right",
+      "neg": "a heater is on the left"
+    },
+    {
+      "subject": "refrigerator",
+      "pos": "a refrigerator is on the right",
+      "neg": "a refrigerator is on the left"
+    },
+    {
+      "subject": "oven",
+      "pos": "an oven is on the right",
+      "neg": "an oven is on the left"
+    },
+    {
+      "subject": "microwave",
+      "pos": "a microwave is on the right",
+      "neg": "a microwave is on the left"
+    },
+    {
+      "subject": "toaster",
+      "pos": "a toaster is on the right",
+      "neg": "a toaster is on the left"
+    },
+    {
+      "subject": "blender",
+      "pos": "a blender is on the right",
+      "neg": "a blender is on the left"
+    },
+    {
+      "subject": "teapot",
+      "pos": "a teapot is on the right",
+      "neg": "a teapot is on the left"
+    },
+    {
+      "subject": "doll",
+      "pos": "a doll is on the right",
+      "neg": "a doll is on the left"
+    },
+    {
+      "subject": "kite",
+      "pos": "a kite is on the right",
+      "neg": "a kite is on the left"
+    },
+    {
+      "subject": "balloon",
+      "pos": "a balloon is on the right",
+      "neg": "a balloon is on the left"
+    },
+    {
+      "subject": "drone",
+      "pos": "a drone is on the right",
+      "neg": "a drone is on the left"
+    },
+    {
+      "subject": "robot",
+      "pos": "a robot is on the right",
+      "neg": "a robot is on the left"
+    },
+    {
+      "subject": "telescope",
+      "pos": "a telescope is on the right",
+      "neg": "a telescope is on the left"
+    },
+    {
+      "subject": "globe",
+      "pos": "a globe is on the right",
+      "neg": "a globe is on the left"
+    },
+    {
+      "subject": "statue",
+      "pos": "a statue is on the right",
+      "neg": "a statue is on the left"
+    },
+    {
+      "subject": "fountain",
+      "pos": "a fountain is on the right",
+      "neg": "a fountain is on the left"
+    },
+    {
+      "subject": "bench",
+      "pos": "a bench is on the right",
+      "neg": "a bench is on the left"
+    },
+    {
+      "subject": "streetlamp",
+      "pos": "a streetlamp is on the right",
+      "neg": "a streetlamp is on the left"
+    },
+    {
+      "subject": "mailbox",
+      "pos": "a mailbox is on the right",
+      "neg": "a mailbox is on the left"
+    },
+    {
+      "subject": "hydrant",
+      "pos": "a hydrant is on the right",
+      "neg": "a hydrant is on the left"
+    },
+    {
+      "subject": "cone",
+      "pos": "a cone is on the right",
+      "neg": "a cone is on the left"
+    },
+    {
+      "subject": "sign",
+      "pos": "a sign is on the right",
+      "neg": "a sign is on the left"
+    },
+    {
+      "subject": "wagon",
+      "pos": "a wagon is on the right",
+      "neg": "a wagon is on the left"
+    },
+    {
+      "subject": "cart",
+      "pos": "a cart is on the right",
+      "neg": "a cart is on the left"
+    },
+    {
+      "subject": "anchor",
+      "pos": "an anchor is on the right",
+      "neg": "an anchor is on the left"
+    },
+    {
+      "subject": "bell",
+      "pos": "a bell is on the right",
+      "neg": "a bell is on the left"
+    },
+    {
+      "subject": "cage",
+      "pos": "a cage is on the right",
+      "neg": "a cage is on the left"
+    },
+    {
+      "subject": "chest",
+      "pos": "a chest is on the right",
+      "neg": "a chest is on the left"
+    },
+    {
+      "subject": "couch",
+      "pos": "a couch is on the right",
+      "neg": "a couch is on the left"
+    },
+    {
+      "subject": "desk",
+      "pos": "a desk is on the right",
+      "neg": "a desk is on the left"
+    },
+    {
+      "subject": "stool",
+      "pos": "a stool is on the right",
+      "neg": "a stool is on the left"
+    },
+    {
+      "subject": "wardrobe",
+      "pos": "a wardrobe is on the right",
+      "neg": "a wardrobe is on the left"
+    },
+    {
+      "subject": "trophy",
+      "pos": "a trophy is on the right",
+      "neg": "a trophy is on the left"
+    }
+  ],
+  "pos": [
+    "a ball is on the right",
+    "a box is on the right",
+    "a book is on the right",
+    "a cup is on the right",
+    "a chair is on the right",
+    "a table is on the right",
+    "a lamp is on the right",
+    "a bottle is on the right",
+    "a clock is on the right",
+    "a phone is on the right",
+    "a car is on the right",
+    "a truck is on the right",
+    "a bicycle is on the right",
+    "a boat is on the right",
+    "a house is on the right",
+    "a tree is on the right",
+    "a rock is on the right",
+    "a flower is on the right",
+    "a plate is on the right",
+    "a bowl is on the right",
+    "a knife is on the right",
+    "a spoon is on the right",
+    "a fork is on the right",
+    "a pillow is on the right",
+    "a blanket is on the right",
+    "a mirror is on the right",
+    "a painting is on the right",
+    "a vase is on the right",
+    "a candle is on the right",
+    "a basket is on the right",
+    "a bucket is on the right",
+    "a ladder is on the right",
+    "a hammer is on the right",
+    "an umbrella is on the right",
+    "a backpack is on the right",
+    "a suitcase is on the right",
+    "a hat is on the right",
+    "a shoe is on the right",
+    "a glove is on the right",
+    "a watch is on the right",
+    "a ring is on the right",
+    "a key is on the right",
+    "a coin is on the right",
+    "a pen is on the right",
+    "a pencil is on the right",
+    "a brush is on the right",
+    "a comb is on the right",
+    "a mug is on the right",
+    "a kettle is on the right",
+    "a pan is on the right",
+    "a pot is on the right",
+    "a jar is on the right",
+    "a can is on the right",
+    "a barrel is on the right",
+    "a crate is on the right",
+    "a drum is on the right",
+    "a guitar is on the right",
+    "a piano is on the right",
+    "a violin is on the right",
+    "a trumpet is on the right",
+    "a camera is on the right",
+    "a television is on the right",
+    "a radio is on the right",
+    "a computer is on the right",
+    "a keyboard is on the right",
+    "a printer is on the right",
+    "a fan is on the right",
+    "a heater is on the right",
+    "a refrigerator is on the right",
+    "an oven is on the right",
+    "a microwave is on the right",
+    "a toaster is on the right",
+    "a blender is on the right",
+    "a teapot is on the right",
+    "a doll is on the right",
+    "a kite is on the right",
+    "a balloon is on the right",
+    "a drone is on the right",
+    "a robot is on the right",
+    "a telescope is on the right",
+    "a globe is on the right",
+    "a statue is on the right",
+    "a fountain is on the right",
+    "a bench is on the right",
+    "a streetlamp is on the right",
+    "a mailbox is on the right",
+    "a hydrant is on the right",
+    "a cone is on the right",
+    "a sign is on the right",
+    "a wagon is on the right",
+    "a cart is on the right",
+    "an anchor is on the right",
+    "a bell is on the right",
+    "a cage is on the right",
+    "a chest is on the right",
+    "a couch is on the right",
+    "a desk is on the right",
+    "a stool is on the right",
+    "a wardrobe is on the right",
+    "a trophy is on the right"
+  ],
+  "neg": [
+    "a ball is on the left",
+    "a box is on the left",
+    "a book is on the left",
+    "a cup is on the left",
+    "a chair is on the left",
+    "a table is on the left",
+    "a lamp is on the left",
+    "a bottle is on the left",
+    "a clock is on the left",
+    "a phone is on the left",
+    "a car is on the left",
+    "a truck is on the left",
+    "a bicycle is on the left",
+    "a boat is on the left",
+    "a house is on the left",
+    "a tree is on the left",
+    "a rock is on the left",
+    "a flower is on the left",
+    "a plate is on the left",
+    "a bowl is on the left",
+    "a knife is on the left",
+    "a spoon is on the left",
+    "a fork is on the left",
+    "a pillow is on the left",
+    "a blanket is on the left",
+    "a mirror is on the left",
+    "a painting is on the left",
+    "a vase is on the left",
+    "a candle is on the left",
+    "a basket is on the left",
+    "a bucket is on the left",
+    "a ladder is on the left",
+    "a hammer is on the left",
+    "an umbrella is on the left",
+    "a backpack is on the left",
+    "a suitcase is on the left",
+    "a hat is on the left",
+    "a shoe is on the left",
+    "a glove is on the left",
+    "a watch is on the left",
+    "a ring is on the left",
+    "a key is on the left",
+    "a coin is on the left",
+    "a pen is on the left",
+    "a pencil is on the left",
+    "a brush is on the left",
+    "a comb is on the left",
+    "a mug is on the left",
+    "a kettle is on the left",
+    "a pan is on the left",
+    "a pot is on the left",
+    "a jar is on the left",
+    "a can is on the left",
+    "a barrel is on the left",
+    "a crate is on the left",
+    "a drum is on the left",
+    "a guitar is on the left",
+    "a piano is on the left",
+    "a violin is on the left",
+    "a trumpet is on the left",
+    "a camera is on the left",
+    "a television is on the left",
+    "a radio is on the left",
+    "a computer is on the left",
+    "a keyboard is on the left",
+    "a printer is on the left",
+    "a fan is on the left",
+    "a heater is on the left",
+    "a refrigerator is on the left",
+    "an oven is on the left",
+    "a microwave is on the left",
+    "a toaster is on the left",
+    "a blender is on the left",
+    "a teapot is on the left",
+    "a doll is on the left",
+    "a kite is on the left",
+    "a balloon is on the left",
+    "a drone is on the left",
+    "a robot is on the left",
+    "a telescope is on the left",
+    "a globe is on the left",
+    "a statue is on the left",
+    "a fountain is on the left",
+    "a bench is on the left",
+    "a streetlamp is on the left",
+    "a mailbox is on the left",
+    "a hydrant is on the left",
+    "a cone is on the left",
+    "a sign is on the left",
+    "a wagon is on the left",
+    "a cart is on the left",
+    "an anchor is on the left",
+    "a bell is on the left",
+    "a cage is on the left",
+    "a chest is on the left",
+    "a couch is on the left",
+    "a desk is on the left",
+    "a stool is on the left",
+    "a wardrobe is on the left",
+    "a trophy is on the left"
+  ]
+}

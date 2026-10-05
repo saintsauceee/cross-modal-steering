@@ -1,0 +1,713 @@
+{
+  "concept": "cleanness",
+  "pos_label": "dirty",
+  "neg_label": "clean",
+  "template": "{art} {subject} is {cleanness}",
+  "n_pairs": 100,
+  "pairs": [
+    {
+      "subject": "kitchen",
+      "pos": "a kitchen is dirty",
+      "neg": "a kitchen is clean"
+    },
+    {
+      "subject": "floor",
+      "pos": "a floor is dirty",
+      "neg": "a floor is clean"
+    },
+    {
+      "subject": "room",
+      "pos": "a room is dirty",
+      "neg": "a room is clean"
+    },
+    {
+      "subject": "car",
+      "pos": "a car is dirty",
+      "neg": "a car is clean"
+    },
+    {
+      "subject": "window",
+      "pos": "a window is dirty",
+      "neg": "a window is clean"
+    },
+    {
+      "subject": "dish",
+      "pos": "a dish is dirty",
+      "neg": "a dish is clean"
+    },
+    {
+      "subject": "plate",
+      "pos": "a plate is dirty",
+      "neg": "a plate is clean"
+    },
+    {
+      "subject": "shirt",
+      "pos": "a shirt is dirty",
+      "neg": "a shirt is clean"
+    },
+    {
+      "subject": "table",
+      "pos": "a table is dirty",
+      "neg": "a table is clean"
+    },
+    {
+      "subject": "bathroom",
+      "pos": "a bathroom is dirty",
+      "neg": "a bathroom is clean"
+    },
+    {
+      "subject": "street",
+      "pos": "a street is dirty",
+      "neg": "a street is clean"
+    },
+    {
+      "subject": "sink",
+      "pos": "a sink is dirty",
+      "neg": "a sink is clean"
+    },
+    {
+      "subject": "mirror",
+      "pos": "a mirror is dirty",
+      "neg": "a mirror is clean"
+    },
+    {
+      "subject": "carpet",
+      "pos": "a carpet is dirty",
+      "neg": "a carpet is clean"
+    },
+    {
+      "subject": "rug",
+      "pos": "a rug is dirty",
+      "neg": "a rug is clean"
+    },
+    {
+      "subject": "counter",
+      "pos": "a counter is dirty",
+      "neg": "a counter is clean"
+    },
+    {
+      "subject": "stove",
+      "pos": "a stove is dirty",
+      "neg": "a stove is clean"
+    },
+    {
+      "subject": "oven",
+      "pos": "an oven is dirty",
+      "neg": "an oven is clean"
+    },
+    {
+      "subject": "refrigerator",
+      "pos": "a refrigerator is dirty",
+      "neg": "a refrigerator is clean"
+    },
+    {
+      "subject": "toilet",
+      "pos": "a toilet is dirty",
+      "neg": "a toilet is clean"
+    },
+    {
+      "subject": "bathtub",
+      "pos": "a bathtub is dirty",
+      "neg": "a bathtub is clean"
+    },
+    {
+      "subject": "shower",
+      "pos": "a shower is dirty",
+      "neg": "a shower is clean"
+    },
+    {
+      "subject": "wall",
+      "pos": "a wall is dirty",
+      "neg": "a wall is clean"
+    },
+    {
+      "subject": "ceiling",
+      "pos": "a ceiling is dirty",
+      "neg": "a ceiling is clean"
+    },
+    {
+      "subject": "desk",
+      "pos": "a desk is dirty",
+      "neg": "a desk is clean"
+    },
+    {
+      "subject": "chair",
+      "pos": "a chair is dirty",
+      "neg": "a chair is clean"
+    },
+    {
+      "subject": "sofa",
+      "pos": "a sofa is dirty",
+      "neg": "a sofa is clean"
+    },
+    {
+      "subject": "bed",
+      "pos": "a bed is dirty",
+      "neg": "a bed is clean"
+    },
+    {
+      "subject": "sheet",
+      "pos": "a sheet is dirty",
+      "neg": "a sheet is clean"
+    },
+    {
+      "subject": "towel",
+      "pos": "a towel is dirty",
+      "neg": "a towel is clean"
+    },
+    {
+      "subject": "curtain",
+      "pos": "a curtain is dirty",
+      "neg": "a curtain is clean"
+    },
+    {
+      "subject": "blanket",
+      "pos": "a blanket is dirty",
+      "neg": "a blanket is clean"
+    },
+    {
+      "subject": "shoe",
+      "pos": "a shoe is dirty",
+      "neg": "a shoe is clean"
+    },
+    {
+      "subject": "boot",
+      "pos": "a boot is dirty",
+      "neg": "a boot is clean"
+    },
+    {
+      "subject": "jacket",
+      "pos": "a jacket is dirty",
+      "neg": "a jacket is clean"
+    },
+    {
+      "subject": "dress",
+      "pos": "a dress is dirty",
+      "neg": "a dress is clean"
+    },
+    {
+      "subject": "cup",
+      "pos": "a cup is dirty",
+      "neg": "a cup is clean"
+    },
+    {
+      "subject": "mug",
+      "pos": "a mug is dirty",
+      "neg": "a mug is clean"
+    },
+    {
+      "subject": "glass",
+      "pos": "a glass is dirty",
+      "neg": "a glass is clean"
+    },
+    {
+      "subject": "bowl",
+      "pos": "a bowl is dirty",
+      "neg": "a bowl is clean"
+    },
+    {
+      "subject": "pot",
+      "pos": "a pot is dirty",
+      "neg": "a pot is clean"
+    },
+    {
+      "subject": "pan",
+      "pos": "a pan is dirty",
+      "neg": "a pan is clean"
+    },
+    {
+      "subject": "spoon",
+      "pos": "a spoon is dirty",
+      "neg": "a spoon is clean"
+    },
+    {
+      "subject": "fork",
+      "pos": "a fork is dirty",
+      "neg": "a fork is clean"
+    },
+    {
+      "subject": "knife",
+      "pos": "a knife is dirty",
+      "neg": "a knife is clean"
+    },
+    {
+      "subject": "apron",
+      "pos": "an apron is dirty",
+      "neg": "an apron is clean"
+    },
+    {
+      "subject": "tablecloth",
+      "pos": "a tablecloth is dirty",
+      "neg": "a tablecloth is clean"
+    },
+    {
+      "subject": "napkin",
+      "pos": "a napkin is dirty",
+      "neg": "a napkin is clean"
+    },
+    {
+      "subject": "dog",
+      "pos": "a dog is dirty",
+      "neg": "a dog is clean"
+    },
+    {
+      "subject": "cat",
+      "pos": "a cat is dirty",
+      "neg": "a cat is clean"
+    },
+    {
+      "subject": "garage",
+      "pos": "a garage is dirty",
+      "neg": "a garage is clean"
+    },
+    {
+      "subject": "driveway",
+      "pos": "a driveway is dirty",
+      "neg": "a driveway is clean"
+    },
+    {
+      "subject": "sidewalk",
+      "pos": "a sidewalk is dirty",
+      "neg": "a sidewalk is clean"
+    },
+    {
+      "subject": "yard",
+      "pos": "a yard is dirty",
+      "neg": "a yard is clean"
+    },
+    {
+      "subject": "garden",
+      "pos": "a garden is dirty",
+      "neg": "a garden is clean"
+    },
+    {
+      "subject": "fence",
+      "pos": "a fence is dirty",
+      "neg": "a fence is clean"
+    },
+    {
+      "subject": "gate",
+      "pos": "a gate is dirty",
+      "neg": "a gate is clean"
+    },
+    {
+      "subject": "roof",
+      "pos": "a roof is dirty",
+      "neg": "a roof is clean"
+    },
+    {
+      "subject": "gutter",
+      "pos": "a gutter is dirty",
+      "neg": "a gutter is clean"
+    },
+    {
+      "subject": "chimney",
+      "pos": "a chimney is dirty",
+      "neg": "a chimney is clean"
+    },
+    {
+      "subject": "engine",
+      "pos": "an engine is dirty",
+      "neg": "an engine is clean"
+    },
+    {
+      "subject": "tool",
+      "pos": "a tool is dirty",
+      "neg": "a tool is clean"
+    },
+    {
+      "subject": "brush",
+      "pos": "a brush is dirty",
+      "neg": "a brush is clean"
+    },
+    {
+      "subject": "sponge",
+      "pos": "a sponge is dirty",
+      "neg": "a sponge is clean"
+    },
+    {
+      "subject": "bucket",
+      "pos": "a bucket is dirty",
+      "neg": "a bucket is clean"
+    },
+    {
+      "subject": "pavement",
+      "pos": "a pavement is dirty",
+      "neg": "a pavement is clean"
+    },
+    {
+      "subject": "alley",
+      "pos": "an alley is dirty",
+      "neg": "an alley is clean"
+    },
+    {
+      "subject": "courtyard",
+      "pos": "a courtyard is dirty",
+      "neg": "a courtyard is clean"
+    },
+    {
+      "subject": "staircase",
+      "pos": "a staircase is dirty",
+      "neg": "a staircase is clean"
+    },
+    {
+      "subject": "doormat",
+      "pos": "a doormat is dirty",
+      "neg": "a doormat is clean"
+    },
+    {
+      "subject": "keyboard",
+      "pos": "a keyboard is dirty",
+      "neg": "a keyboard is clean"
+    },
+    {
+      "subject": "screen",
+      "pos": "a screen is dirty",
+      "neg": "a screen is clean"
+    },
+    {
+      "subject": "lens",
+      "pos": "a lens is dirty",
+      "neg": "a lens is clean"
+    },
+    {
+      "subject": "bottle",
+      "pos": "a bottle is dirty",
+      "neg": "a bottle is clean"
+    },
+    {
+      "subject": "jar",
+      "pos": "a jar is dirty",
+      "neg": "a jar is clean"
+    },
+    {
+      "subject": "tray",
+      "pos": "a tray is dirty",
+      "neg": "a tray is clean"
+    },
+    {
+      "subject": "cutting board",
+      "pos": "a cutting board is dirty",
+      "neg": "a cutting board is clean"
+    },
+    {
+      "subject": "stovetop",
+      "pos": "a stovetop is dirty",
+      "neg": "a stovetop is clean"
+    },
+    {
+      "subject": "backsplash",
+      "pos": "a backsplash is dirty",
+      "neg": "a backsplash is clean"
+    },
+    {
+      "subject": "grill",
+      "pos": "a grill is dirty",
+      "neg": "a grill is clean"
+    },
+    {
+      "subject": "helmet",
+      "pos": "a helmet is dirty",
+      "neg": "a helmet is clean"
+    },
+    {
+      "subject": "glove",
+      "pos": "a glove is dirty",
+      "neg": "a glove is clean"
+    },
+    {
+      "subject": "uniform",
+      "pos": "an uniform is dirty",
+      "neg": "an uniform is clean"
+    },
+    {
+      "subject": "tent",
+      "pos": "a tent is dirty",
+      "neg": "a tent is clean"
+    },
+    {
+      "subject": "backpack",
+      "pos": "a backpack is dirty",
+      "neg": "a backpack is clean"
+    },
+    {
+      "subject": "pillowcase",
+      "pos": "a pillowcase is dirty",
+      "neg": "a pillowcase is clean"
+    },
+    {
+      "subject": "hallway",
+      "pos": "a hallway is dirty",
+      "neg": "a hallway is clean"
+    },
+    {
+      "subject": "basement",
+      "pos": "a basement is dirty",
+      "neg": "a basement is clean"
+    },
+    {
+      "subject": "kennel",
+      "pos": "a kennel is dirty",
+      "neg": "a kennel is clean"
+    },
+    {
+      "subject": "stable",
+      "pos": "a stable is dirty",
+      "neg": "a stable is clean"
+    },
+    {
+      "subject": "barn",
+      "pos": "a barn is dirty",
+      "neg": "a barn is clean"
+    },
+    {
+      "subject": "coop",
+      "pos": "a coop is dirty",
+      "neg": "a coop is clean"
+    },
+    {
+      "subject": "pen",
+      "pos": "a pen is dirty",
+      "neg": "a pen is clean"
+    },
+    {
+      "subject": "cage",
+      "pos": "a cage is dirty",
+      "neg": "a cage is clean"
+    },
+    {
+      "subject": "tank",
+      "pos": "a tank is dirty",
+      "neg": "a tank is clean"
+    },
+    {
+      "subject": "aquarium",
+      "pos": "an aquarium is dirty",
+      "neg": "an aquarium is clean"
+    },
+    {
+      "subject": "fishbowl",
+      "pos": "a fishbowl is dirty",
+      "neg": "a fishbowl is clean"
+    },
+    {
+      "subject": "birdcage",
+      "pos": "a birdcage is dirty",
+      "neg": "a birdcage is clean"
+    },
+    {
+      "subject": "windowsill",
+      "pos": "a windowsill is dirty",
+      "neg": "a windowsill is clean"
+    },
+    {
+      "subject": "radiator",
+      "pos": "a radiator is dirty",
+      "neg": "a radiator is clean"
+    }
+  ],
+  "pos": [
+    "a kitchen is dirty",
+    "a floor is dirty",
+    "a room is dirty",
+    "a car is dirty",
+    "a window is dirty",
+    "a dish is dirty",
+    "a plate is dirty",
+    "a shirt is dirty",
+    "a table is dirty",
+    "a bathroom is dirty",
+    "a street is dirty",
+    "a sink is dirty",
+    "a mirror is dirty",
+    "a carpet is dirty",
+    "a rug is dirty",
+    "a counter is dirty",
+    "a stove is dirty",
+    "an oven is dirty",
+    "a refrigerator is dirty",
+    "a toilet is dirty",
+    "a bathtub is dirty",
+    "a shower is dirty",
+    "a wall is dirty",
+    "a ceiling is dirty",
+    "a desk is dirty",
+    "a chair is dirty",
+    "a sofa is dirty",
+    "a bed is dirty",
+    "a sheet is dirty",
+    "a towel is dirty",
+    "a curtain is dirty",
+    "a blanket is dirty",
+    "a shoe is dirty",
+    "a boot is dirty",
+    "a jacket is dirty",
+    "a dress is dirty",
+    "a cup is dirty",
+    "a mug is dirty",
+    "a glass is dirty",
+    "a bowl is dirty",
+    "a pot is dirty",
+    "a pan is dirty",
+    "a spoon is dirty",
+    "a fork is dirty",
+    "a knife is dirty",
+    "an apron is dirty",
+    "a tablecloth is dirty",
+    "a napkin is dirty",
+    "a dog is dirty",
+    "a cat is dirty",
+    "a garage is dirty",
+    "a driveway is dirty",
+    "a sidewalk is dirty",
+    "a yard is dirty",
+    "a garden is dirty",
+    "a fence is dirty",
+    "a gate is dirty",
+    "a roof is dirty",
+    "a gutter is dirty",
+    "a chimney is dirty",
+    "an engine is dirty",
+    "a tool is dirty",
+    "a brush is dirty",
+    "a sponge is dirty",
+    "a bucket is dirty",
+    "a pavement is dirty",
+    "an alley is dirty",
+    "a courtyard is dirty",
+    "a staircase is dirty",
+    "a doormat is dirty",
+    "a keyboard is dirty",
+    "a screen is dirty",
+    "a lens is dirty",
+    "a bottle is dirty",
+    "a jar is dirty",
+    "a tray is dirty",
+    "a cutting board is dirty",
+    "a stovetop is dirty",
+    "a backsplash is dirty",
+    "a grill is dirty",
+    "a helmet is dirty",
+    "a glove is dirty",
+    "an uniform is dirty",
+    "a tent is dirty",
+    "a backpack is dirty",
+    "a pillowcase is dirty",
+    "a hallway is dirty",
+    "a basement is dirty",
+    "a kennel is dirty",
+    "a stable is dirty",
+    "a barn is dirty",
+    "a coop is dirty",
+    "a pen is dirty",
+    "a cage is dirty",
+    "a tank is dirty",
+    "an aquarium is dirty",
+    "a fishbowl is dirty",
+    "a birdcage is dirty",
+    "a windowsill is dirty",
+    "a radiator is dirty"
+  ],
+  "neg": [
+    "a kitchen is clean",
+    "a floor is clean",
+    "a room is clean",
+    "a car is clean",
+    "a window is clean",
+    "a dish is clean",
+    "a plate is clean",
+    "a shirt is clean",
+    "a table is clean",
+    "a bathroom is clean",
+    "a street is clean",
+    "a sink is clean",
+    "a mirror is clean",
+    "a carpet is clean",
+    "a rug is clean",
+    "a counter is clean",
+    "a stove is clean",
+    "an oven is clean",
+    "a refrigerator is clean",
+    "a toilet is clean",
+    "a bathtub is clean",
+    "a shower is clean",
+    "a wall is clean",
+    "a ceiling is clean",
+    "a desk is clean",
+    "a chair is clean",
+    "a sofa is clean",
+    "a bed is clean",
+    "a sheet is clean",
+    "a towel is clean",
+    "a curtain is clean",
+    "a blanket is clean",
+    "a shoe is clean",
+    "a boot is clean",
+    "a jacket is clean",
+    "a dress is clean",
+    "a cup is clean",
+    "a mug is clean",
+    "a glass is clean",
+    "a bowl is clean",
+    "a pot is clean",
+    "a pan is clean",
+    "a spoon is clean",
+    "a fork is clean",
+    "a knife is clean",
+    "an apron is clean",
+    "a tablecloth is clean",
+    "a napkin is clean",
+    "a dog is clean",
+    "a cat is clean",
+    "a garage is clean",
+    "a driveway is clean",
+    "a sidewalk is clean",
+    "a yard is clean",
+    "a garden is clean",
+    "a fence is clean",
+    "a gate is clean",
+    "a roof is clean",
+    "a gutter is clean",
+    "a chimney is clean",
+    "an engine is clean",
+    "a tool is clean",
+    "a brush is clean",
+    "a sponge is clean",
+    "a bucket is clean",
+    "a pavement is clean",
+    "an alley is clean",
+    "a courtyard is clean",
+    "a staircase is clean",
+    "a doormat is clean",
+    "a keyboard is clean",
+    "a screen is clean",
+    "a lens is clean",
+    "a bottle is clean",
+    "a jar is clean",
+    "a tray is clean",
+    "a cutting board is clean",
+    "a stovetop is clean",
+    "a backsplash is clean",
+    "a grill is clean",
+    "a helmet is clean",
+    "a glove is clean",
+    "an uniform is clean",
+    "a tent is clean",
+    "a backpack is clean",
+    "a pillowcase is clean",
+    "a hallway is clean",
+    "a basement is clean",
+    "a kennel is clean",
+    "a stable is clean",
+    "a barn is clean",
+    "a coop is clean",
+    "a pen is clean",
+    "a cage is clean",
+    "a tank is clean",
+    "an aquarium is clean",
+    "a fishbowl is clean",
+    "a birdcage is clean",
+    "a windowsill is clean",
+    "a radiator is clean"
+  ]
+}
