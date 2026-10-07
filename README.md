@@ -31,6 +31,9 @@ Generation needs one environment per model, because the three models pin differe
 
 One 80 GB GPU runs each model.
 
+`.env.example` lists every environment variable the package reads (the judge's API key, model paths). Copy it to
+`.env`, fill it in, and load it with `set -a; source .env; set +a`.
+
 ## Reproduce the paper
 
 Each step starts from a released artifact, so you can enter at whichever step your budget allows.
