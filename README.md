@@ -8,23 +8,24 @@ text or image minimal pairs and apply them to text and image generation in UniAR
 ```bash
 pip install -e .                 # analysis and figures (CPU)
 pip install -e ".[judge]"        # + the Gemini judge
-pip install -e ".[uniar]"        # + one model: uniar, liquid or emu35 (one environment per model)
+pip install -e ".[uniar]"        # + UniAR, the model the examples below use
 ```
 
 Copy `.env.example` to `.env`, fill in what you need, and load it:
 
 ```bash
-set -a; source .env; set +a
+set -a
+source .env
+set +a
 ```
 
 | variable | needed for |
 |---|---|
 | `GEMINI_API_KEY` | `cmsteer judge` |
 | `UNIAR_CKPT` | UniAR (optional, defaults to the Hub id) |
-| `LIQUID_CKPT`, `LIQUID_VQGAN_DIR` | Liquid (also needs the `chameleon` package) |
-| `EMU35_REPO`, `EMU35_CKPTS`, `EMU35_VAE` | Emu3.5 (a checkout of [baaivision/Emu3.5](https://github.com/baaivision/Emu3.5)) |
 
-Each model runs on one 80 GB GPU.
+Liquid and Emu3.5 work the same way (`--model liquid`, `--model emu35`), each in its own environment
+(`.[liquid]`, `.[emu35]`); `.env.example` lists what they need.
 
 ## Quick start
 
@@ -59,15 +60,11 @@ Skip step 1 with `--vectors release` to use the released vectors. To run a small
 |---|---|---|
 | `cmsteer results` | tables and figures from judge scores | `--out`, `--root`, `--models` |
 | `cmsteer extract` | steering vectors from minimal pairs | `--model`, `--out`, `--concepts`, `--modalities`, `--pairs` |
-| `cmsteer sweep` | steered generations for a config | `--config`, `--out`, `--vectors`, `--media`, `--concepts`, `--quadrants`, `--layer-configs`, `--n-prompts`, `--shard`, `--nshard`, `--dry-run` |
-| `cmsteer merge` | join the files of a multi-GPU sweep | `--out` |
-| `cmsteer judge` | concept-rate judge over a sweep | `--run`, `--media`, `--workers`, `--limit`, `--replay` |
+| `cmsteer sweep` | steered generations for a config | `--config`, `--out`, `--vectors`, `--media`, `--concepts`, `--quadrants`, `--layer-configs`, `--n-prompts`, `--dry-run` |
+| `cmsteer judge` | concept-rate judge over a sweep | `--run`, `--media`, `--workers`, `--limit` |
 | `cmsteer steer` | one unsteered and one steered output | `--model`, `--concept`, `--alpha`, `--source`, `--layers`, `--image`, `--prompt` |
-| `cmsteer check` | regenerate released outputs and compare | `--model`, `--concept`, `--no-images`, `--no-vectors` |
-| `cmsteer fetch` | download released data | `--model`, `--parts` |
 
-`cmsteer <command> --help` lists every option. Sweeps resume where they stopped. For N GPUs, run
-`cmsteer sweep ... --shard i --nshard N` once per GPU, then `cmsteer merge`.
+`cmsteer <command> --help` lists every option. Sweeps resume where they stopped.
 
 ## Python API
 
@@ -77,7 +74,7 @@ from cmsteer.models import load_model
 from cmsteer.steering import Steer
 from cmsteer.vectors import load_vector
 
-model = load_model("uniar")                                   # "uniar", "emu35" or "liquid"
+model = load_model("uniar")
 v = load_vector(hub.fetch("uniar", ["vectors"]) / "vectors/emotion/txt.pt")   # [n_layers, hidden]
 steer = Steer(v, layers=[16, 17, 18, 19], alpha=9.0)          # adds alpha * unit(v) at these layers
 
@@ -121,31 +118,6 @@ runs/<model>/
 
 The released data has the same layout: one Hugging Face dataset per model, plus one for the minimal pairs.
 
-## Notes
-
-- With the released vectors, UniAR images regenerate pixel for pixel on an A100. With vectors you extract yourself they
-  are a new sample of the same distribution.
-- Text is greedy but depends on batch composition in bf16, so regenerated text matches the release in distribution.
-- Released Emu3.5 images came from a vLLM engine; this code generates them with `transformers`.
-
-## Tests
-
-```bash
-pip install -e ".[dev]"
-pytest
-```
-
 ## License
 
 MIT. The vendored UniAR code under `src/cmsteer/models/_vendor/uniar/` is Apache-2.0.
-
-## Citation
-
-```bibtex
-@inproceedings{crossmodalsteering2027,
-  title     = {Cross-Modal Steering Vectors Exist Across Both Image and Text Generation},
-  author    = {Anonymous},
-  booktitle = {Under review},
-  year      = {2026}
-}
-```

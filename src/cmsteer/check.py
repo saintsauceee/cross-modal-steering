@@ -7,8 +7,8 @@
   release for a long prefix and then may drift. The check reports character similarity next to exact matches;
   the comparison that matters is the judged concept rate;
 - images: three seeded batches (two strengths of img2img, one of txt2img), made exactly as the paper's run made them
-  and steered with the released vectors (pixel match for UniAR, near-identical for Liquid, on the A100 GPUs the
-  paper's runs used; Emu3.5's released images came from a different engine);
+  and steered with the released vectors (pixel match for UniAR, near-identical for Liquid; Emu3.5's
+  released images came from a different engine);
 - vectors: the text vector of one concept re-extracted from the minimal pairs (cosine with the released one).
 """
 
