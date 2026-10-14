@@ -20,6 +20,8 @@ dependencies = [
 [project.optional-dependencies]
 # The concept-rate judge (Gemini).
 judge = ["google-genai>=1.0"]
+# The DreamSim pole score (cmsteer judge --metric dreamsim).
+dreamsim = ["dreamsim>=0.2"]
 # Model backends. The three models need different transformers versions, so install each in its own
 # environment (see README "Environments").
 uniar = ["transformers==4.57.0", "accelerate", "diffusers", "qwen-vl-utils"]
@@ -51,3 +53,6 @@ ignore = ["E731"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/cmsteer/judge/quality.py" = ["E501"]   # the judge prompts are kept verbatim

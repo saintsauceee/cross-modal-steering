@@ -31,9 +31,11 @@ def cmd_results(a):
     root = Path(a.root) if a.root else None
     if root is None:
         for m in models:
-            hub.fetch(m, ("scores", "vectors"))
+            hub.fetch(m, ("scores", "vectors", "generations"))
+        hub.fetch_examples(models)                     # the few images Figures 4a and 6 show
         root = hub.data_root()
-    written = make_all(root, a.out, models)
+    pairs = Path(a.pairs) if a.pairs else hub.data_root() / "minimal-pairs" / "img"      # Figure 6, if present
+    written = make_all(root, a.out, models, pairs_dir=pairs)
     for name, path in written.items():
         print(f"{name:34s} {path}")
 
@@ -113,6 +115,18 @@ def cmd_merge(a):
 
 def cmd_judge(a):
     from cmsteer import hub
+
+    if a.metric == "fluency":
+        from cmsteer.judge.quality import fluency
+        return print(fluency(a.run, workers=a.workers, limit=a.limit, configs=_list(a.layer_configs)))
+    if a.metric == "coherence":
+        from cmsteer.judge.quality import coherence
+        return print(coherence(a.run, workers=a.workers, limit=a.limit, configs=_list(a.layer_configs) or ("mid",)))
+    if a.metric == "dreamsim":
+        from cmsteer.judge.dreamsim import pole_scores
+        if not a.refs:
+            raise SystemExit("cmsteer judge --metric dreamsim needs --refs (a folder <concept>/p<NN>_{pos,neg}.png)")
+        return print(pole_scores(a.run, a.refs))
     from cmsteer.judge.concept_rate import judge
 
     replay = None
@@ -170,6 +184,7 @@ def main(argv=None):
     p.add_argument("--root", help="folder with <model>/judge/concept-rate_scores.csv (default: download the release)")
     p.add_argument("--out", default="results")
     p.add_argument("--models", default=",".join(MODELS))
+    p.add_argument("--pairs", help="image minimal pairs folder, for the pairs figure (default: the downloaded ones)")
     p.set_defaults(fn=cmd_results)
 
     p = sub.add_parser("fetch", help="download released artifacts")
@@ -207,8 +222,11 @@ def main(argv=None):
     p.add_argument("--out", required=True)
     p.set_defaults(fn=cmd_merge)
 
-    p = sub.add_parser("judge", help="concept-rate judge over a sweep (needs GEMINI_API_KEY)")
+    p = sub.add_parser("judge", help="score a sweep: concept rate, fluency, coherence (need GEMINI_API_KEY), DreamSim")
     p.add_argument("--run", required=True)
+    p.add_argument("--metric", default="concept-rate", choices=["concept-rate", "fluency", "coherence", "dreamsim"])
+    p.add_argument("--layer-configs", help="fluency / coherence: only these layer configs (coherence default: mid)")
+    p.add_argument("--refs", help="dreamsim: folder of pole references, <concept>/p<NN>_{pos,neg}.png")
     p.add_argument("--media", default="text,image")
     p.add_argument("--workers", type=int, default=32)
     p.add_argument("--limit", type=int)

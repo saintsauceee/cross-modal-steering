@@ -7,7 +7,8 @@ text or image minimal pairs and apply them to text and image generation in UniAR
 
 ```bash
 pip install -e .                 # analysis and figures (CPU)
-pip install -e ".[judge]"        # + the Gemini judge
+pip install -e ".[judge]"        # + the Gemini judges (concept rate, fluency, coherence)
+pip install -e ".[dreamsim]"     # + the DreamSim pole score
 pip install -e ".[uniar]"        # + UniAR, the model the examples below use
 ```
 
@@ -54,6 +55,17 @@ cmsteer results --root runs --models uniar --out results/uniar                # 
 Skip step 1 with `--vectors release` to use the released vectors. To run a small slice, add for example
 `--concepts emotion --layer-configs mid --n-prompts 2` to `sweep`.
 
+Optional output-quality scores, picked up by `cmsteer results`:
+
+```bash
+cmsteer judge --run runs/uniar --metric fluency                     # text fluency (Gemini)
+cmsteer judge --run runs/uniar --metric coherence                   # image coherence, middle layers (Gemini)
+cmsteer judge --run runs/uniar --metric dreamsim --refs <refs dir>  # DreamSim pole score
+```
+
+DreamSim compares each image with a positive- and a negative-pole reference of its prompt, stored as
+`<refs dir>/<concept>/p<NN>_{pos,neg}.png`.
+
 ## Commands
 
 | command | what it does | main options |
@@ -61,7 +73,7 @@ Skip step 1 with `--vectors release` to use the released vectors. To run a small
 | `cmsteer results` | tables and figures from judge scores | `--out`, `--root`, `--models` |
 | `cmsteer extract` | steering vectors from minimal pairs | `--model`, `--out`, `--concepts`, `--modalities`, `--pairs` |
 | `cmsteer sweep` | steered generations for a config | `--config`, `--out`, `--vectors`, `--media`, `--concepts`, `--quadrants`, `--layer-configs`, `--n-prompts`, `--dry-run` |
-| `cmsteer judge` | concept-rate judge over a sweep | `--run`, `--media`, `--workers`, `--limit` |
+| `cmsteer judge` | score a sweep: concept rate (default), fluency, coherence or DreamSim | `--run`, `--metric`, `--media`, `--workers`, `--limit`, `--refs` |
 | `cmsteer steer` | one unsteered and one steered output | `--model`, `--concept`, `--alpha`, `--source`, `--layers`, `--image`, `--prompt` |
 
 `cmsteer <command> --help` lists every option. Sweeps resume where they stopped.
@@ -86,17 +98,7 @@ msg = "Describe your day in the city. Your description must include a dog."
 texts = model.generate_text([msg], spans=["a dog"], steer=[Steer(v, [16, 17, 18, 19], alpha=-40.0)])
 ```
 
-Other entry points:
-
-| | |
-|---|---|
-| `cmsteer.extract.text_vector(model, concept)`, `image_vector(model, concept, pairs_dir)` | extract a vector |
-| `cmsteer.sweep.run_sweep(cfg, model, vectors, out)` | run a sweep from Python |
-| `cmsteer.judge.concept_rate.judge(run)` | judge a sweep |
-| `cmsteer.analysis.metrics` | `load_scores`, `concept_rate`, `auc_table`, `recovery_table` |
-| `cmsteer.analysis.report.make_all(root, out, models)` | every table and figure |
-| `cmsteer.concepts.register(Concept(...))` | add a concept (`examples/new_concept.py`) |
-| `cmsteer.models.register(name, "module:Class")` | add a model (`examples/new_model.md`) |
+See `examples/` for adding a concept or a model.
 
 ## Configs
 

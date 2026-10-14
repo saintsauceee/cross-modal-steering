@@ -11,6 +11,7 @@ import pandas as pd  # noqa: E402
 from matplotlib.collections import LineCollection  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import Patch  # noqa: E402
+from matplotlib.ticker import MaxNLocator  # noqa: E402
 
 from cmsteer.analysis.metrics import DIRECTION_LABEL, RANGES, TRANSFER, concept_rate  # noqa: E402
 from cmsteer.analysis.tables import MODEL_NAMES, recovery_by_range  # noqa: E402
@@ -46,7 +47,7 @@ def transfer_curves(scores: pd.DataFrame, config: str = "mid", concepts=None) ->
     concepts = concepts or [c for c in CONCEPTS if c in set(scores["concept"])]
     cr = concept_rate(scores)
     rows = [("txt2img", "img steering"), ("img2txt", "txt steering")]
-    fig, axes = plt.subplots(2, len(concepts), figsize=(7.6, 2.9), squeeze=False)
+    fig, axes = plt.subplots(2, len(concepts), figsize=(1.25 * len(concepts) + 0.9, 3.4), squeeze=False)
     for i, c in enumerate(concepts):
         for r, (tq, label) in enumerate(rows):
             ax = axes[r][i]
@@ -64,6 +65,9 @@ def transfer_curves(scores: pd.DataFrame, config: str = "mid", concepts=None) ->
             ax.set_xlim(-1, 1)
             ax.set_ylim(-0.02, 1.02)
             ax.set_xticks([-1, 0, 1])
+            ax.set_xticklabels(["−1", "0", "1"])
+            ax.get_xticklabels()[0].set_ha("left")          # keep the edge labels of neighbouring panels apart
+            ax.get_xticklabels()[-1].set_ha("right")
             ax.set_yticks([0, 0.5, 1])
             ax.set_box_aspect(1)
             ax.tick_params(labelsize=6)
@@ -72,14 +76,15 @@ def transfer_curves(scores: pd.DataFrame, config: str = "mid", concepts=None) ->
                 ax.set_title(concept_name(c), fontsize=8)
                 ax.set_xticklabels([])
             if i == 0:
-                ax.set_ylabel(label, fontsize=8)
-    fig.supxlabel("steering strength (normalized)", fontsize=8, y=0.02)
-    fig.supylabel("concept rate", fontsize=8, x=0.005)
+                ax.set_ylabel(f"concept rate\n({label})", fontsize=7.5)
+            else:
+                ax.set_yticklabels([])
+    fig.supxlabel("steering strength (normalized)", fontsize=8, y=0.03)
     handles = [Line2D([0], [0], color="black", lw=1.0), Line2D([0], [0], color=GREEN, lw=2.2),
                Line2D([0], [0], color=RED, lw=2.2)]
     fig.legend(handles, ["intra-modality", "transfer above intra-modality", "transfer below intra-modality"],
                loc="upper center", ncol=3, fontsize=7, frameon=False)
-    fig.subplots_adjust(left=0.07, right=0.995, top=0.86, bottom=0.12, wspace=0.35, hspace=0.12)
+    fig.subplots_adjust(left=0.08, right=0.99, top=0.84, bottom=0.16, wspace=0.18, hspace=0.18)
     return fig
 
 
@@ -108,7 +113,10 @@ def layer_grid(scores: pd.DataFrame, layer_configs, concepts=None) -> plt.Figure
                 ax.plot(x, y, color=col, lw=lw, ls=ls, label=lab, zorder=3 if cfg == "all" else 2)
             ax.set_xlim(-1, 1)
             ax.set_ylim(-0.02, 1.0)
-            ax.set_xticks([-1, -0.5, 0, 0.5, 1])
+            ax.set_xticks([-1, 0, 1])
+            ax.set_xticklabels(["−1", "0", "1"])
+            ax.get_xticklabels()[0].set_ha("left")
+            ax.get_xticklabels()[-1].set_ha("right")
             ax.set_yticks([0, 0.5, 1])
             ax.tick_params(labelsize=7)
             ax.grid(True, alpha=0.2, lw=0.4)
@@ -131,7 +139,7 @@ def recovery_bars(scores: pd.DataFrame) -> plt.Figure:
     """Figure 3: mean cross-modal recovery over concepts per model and layer range, both directions."""
     t = recovery_by_range(scores)
     models = list(dict.fromkeys(t.index.get_level_values("model")))
-    fig, ax = plt.subplots(figsize=(5.2, 2.2))
+    fig, ax = plt.subplots(figsize=(7.2, 2.8))
     w, x0 = 0.38, 0
     ticks, labels = [], []
     for m in models:
@@ -142,21 +150,22 @@ def recovery_bars(scores: pd.DataFrame) -> plt.Figure:
                     continue
                 v = t.loc[(m, d), rng]
                 ax.bar(x + off, v, w, color=col, zorder=2)
-                ax.text(x + off, v + 0.02, f"{v:.2f}", ha="center", va="bottom", fontsize=5.5)
+                ax.text(x + off, v + 0.03, f"{v:.2f}", ha="center", va="bottom", fontsize=5.5, zorder=4,
+                        bbox=dict(boxstyle="square,pad=0.08", fc="white", ec="none"))
             ticks.append(x)
             labels.append(rng)
         ax.text(x0 + (len(t.columns) - 1) / 2, -0.32, MODEL_NAMES.get(m, m), ha="center", fontsize=8,
                 transform=ax.get_xaxis_transform())
         x0 += len(t.columns) + 0.8
-    ax.axhline(1.0, color="black", ls="--", lw=0.8)
+    ax.axhline(1.0, color="black", ls="--", lw=0.8, zorder=3)
     ax.set_xticks(ticks)
     ax.set_xticklabels(labels, fontsize=7)
     ax.set_ylabel("mean cross-modal recovery", fontsize=8)
     ax.tick_params(axis="y", labelsize=7)
-    ax.set_ylim(0, max(1.1, float(np.nan_to_num(t.values).max()) + 0.15))
+    ax.set_ylim(0, max(1.1, float(np.nan_to_num(t.values).max()) + 0.22))
     fig.legend([Patch(color="#A61B1B"), Patch(color="#1F5FA6")], ["txt→img", "img→txt"], fontsize=7, frameon=False,
                ncol=2, loc="upper center")
-    fig.subplots_adjust(bottom=0.25, top=0.88)
+    fig.subplots_adjust(bottom=0.22, top=0.86, left=0.09, right=0.99)
     return fig
 
 
@@ -194,7 +203,7 @@ def cosine_scatter(points: pd.DataFrame, corr: pd.DataFrame) -> plt.Figure:
 
 def cosine_by_layer(cosines: dict, dim: int) -> plt.Figure:
     """Figure 16a: per-layer cos(v_txt, v_img) per concept, with the +-2 sigma band of random directions."""
-    fig, ax = plt.subplots(figsize=(4.6, 2.6))
+    fig, ax = plt.subplots(figsize=(6.2, 2.8))
     n = len(next(iter(cosines.values())))
     band = 2 / np.sqrt(dim)
     ax.axhspan(-band, band, color="#dddddd", zorder=0, label="random (±2σ)")
@@ -203,7 +212,8 @@ def cosine_by_layer(cosines: dict, dim: int) -> plt.Figure:
     ax.set_xlabel("layer", fontsize=8)
     ax.set_ylabel(r"cos($\hat v_{txt}$, $\hat v_{img}$)", fontsize=8)
     ax.tick_params(labelsize=7)
-    ax.legend(fontsize=6, frameon=False, ncol=3)
+    ax.legend(fontsize=7, frameon=False, loc="center left", bbox_to_anchor=(1.01, 0.5))
+    fig.subplots_adjust(left=0.1, right=0.78, bottom=0.18, top=0.95)
     return fig
 
 
@@ -239,4 +249,101 @@ def image_strips(run, concept: str, prompt_idx: int, config: str = "mid", quadra
         axes[i][0].text(-0.08, 0.5, DIRECTION_LABEL[q], transform=axes[i][0].transAxes, rotation=90, ha="right",
                         va="center", fontsize=8)
     fig.subplots_adjust(wspace=0.04, hspace=0.12)
+    return fig
+
+
+def minimal_pairs(pairs_dir, concepts=None, index: int = 0) -> plt.Figure:
+    """Figure 6: one image minimal pair per concept (negative pole, positive pole) with the description its baseline
+    was generated from. `pairs_dir` holds <concept>/<pair>/{neg,pos}.png and meta.json."""
+    import json
+    import textwrap
+    from pathlib import Path
+
+    from PIL import Image
+
+    pairs_dir = Path(pairs_dir)
+    concepts = [c for c in (concepts or list(CONCEPTS)) if (pairs_dir / c).is_dir()]
+    if not concepts:
+        raise FileNotFoundError(f"no image pairs under {pairs_dir}")
+    cols = min(4, len(concepts))
+    nrow = -(-len(concepts) // cols)
+    fig, axes = plt.subplots(nrow, cols * 2, figsize=(1.9 * cols * 2, 2.6 * nrow), squeeze=False)
+    for ax in axes.flat:
+        ax.axis("off")
+    for k, c in enumerate(concepts):
+        d = sorted(p for p in (pairs_dir / c).iterdir() if p.is_dir())[index]
+        meta = json.loads((d / "meta.json").read_text()) if (d / "meta.json").exists() else {}
+        r, col = divmod(k, cols)
+        con = CONCEPTS.get(c)
+        for j, pole in enumerate(("neg", "pos")):
+            ax = axes[r][col * 2 + j]
+            ax.imshow(Image.open(d / f"{pole}.png"))
+            label = (con.neg if pole == "neg" else con.pos) if con else pole
+            ax.set_title(f"{'−' if pole == 'neg' else '+'} {label}", fontsize=8)
+        caption = textwrap.fill(textwrap.shorten(meta.get("prompt", ""), 150, placeholder=" ..."), 46)
+        axes[r][col * 2].text(0, -0.06, f"{concept_name(c)}: {caption}",
+                              transform=axes[r][col * 2].transAxes, fontsize=7.5, va="top")
+    fig.subplots_adjust(wspace=0.04, hspace=0.62)
+    return fig
+
+
+def dreamsim_curves(scores: dict, config: str | None = None) -> plt.Figure:
+    """Figure 7: mean DreamSim pole score against normalized strength, one row per model, image-derived vectors on
+    the left and text-derived on the right. `scores` maps model -> DreamSim score table; `config` restricts to
+    one layer configuration (default: all, as in the paper)."""
+    models = list(scores)
+    quads = [("img2img", "intra-modality (img→img)"), ("txt2img", "transfer (txt→img)")]
+    fig, axes = plt.subplots(len(models), 2, figsize=(8.2, 2.4 * len(models) + 0.6), sharey="row", squeeze=False)
+    for i, m in enumerate(models):
+        df = scores[m] if config is None else scores[m][scores[m].config == config]
+        for j, (q, title) in enumerate(quads):
+            ax = axes[i][j]
+            g = df[df.quadrant == q]
+            top = g["alpha"].abs().max() if len(g) else 1.0
+            for c in [c for c in CONCEPTS if c in set(g["concept"])]:
+                mean = g[g.concept == c].groupby("alpha")["score"].mean()
+                ax.plot(mean.index / top, mean.values, color=CONCEPT_COLORS.get(c, "grey"), lw=1.2, marker="o", ms=2,
+                        label=concept_name(c))
+            ax.axhline(50, color="#b0b0b0", lw=0.6, ls=(0, (3, 3)), zorder=0)
+            ax.yaxis.set_major_locator(MaxNLocator(integer=True, steps=[1, 2, 5, 10]))
+            ax.set_xticks([-1, -0.5, 0, 0.5, 1])
+            ax.tick_params(labelsize=7)
+            ax.grid(True, alpha=0.2, lw=0.4)
+            if i == 0:
+                ax.set_title(title, fontsize=9)
+            if j == 0:
+                ax.set_ylabel(f"{MODEL_NAMES.get(m, m)}\nDreamSim pole score", fontsize=8)
+            if i == len(models) - 1:
+                ax.set_xlabel(r"$\alpha/\alpha_{\max}$", fontsize=8)
+    h, lab = axes[0][0].get_legend_handles_labels()
+    fig.legend(h, lab, loc="upper center", ncol=len(h), fontsize=7, frameon=False)
+    fig.subplots_adjust(top=1 - 0.75 / fig.get_figheight(), hspace=0.32, wspace=0.08)
+    return fig
+
+
+def quality_curves(table: pd.DataFrame) -> plt.Figure:
+    """Figure 8: concept rate (solid) and quality relative to the unsteered outputs (dashed) against normalized
+    strength; text generation on the left, image generation on the right. `table` has quadrant, strength,
+    concept_rate, quality (already averaged over models), as from `metrics.quality_vs_strength`."""
+    panels = [("text generation", [("txt2txt", "black"), ("img2txt", RED)], "fluency"),
+              ("image generation", [("img2img", "black"), ("txt2img", RED)], "coherence")]
+    panels = [p for p in panels if any(q in set(table["quadrant"]) for q, _ in p[1])]
+    fig, axes = plt.subplots(1, len(panels), figsize=(3.8 * len(panels), 2.9), sharey=True, squeeze=False)
+    for ax, (title, quads, qname) in zip(axes[0], panels, strict=True):
+        for q, col in quads:
+            d = table[table.quadrant == q].sort_values("strength")
+            if d.empty:
+                continue
+            name = DIRECTION_LABEL[q]
+            ax.plot(d.strength, d.concept_rate, "-o", color=col, ms=3, lw=1.5, label=f"{name}: concept rate")
+            ax.plot(d.strength, d.quality, "--s", color=col, ms=3, lw=1.5, label=f"{name}: {qname}")
+        ax.set_title(title, fontsize=9)
+        ax.set_xlabel("steering strength (normalized)", fontsize=8)
+        ax.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
+        ax.set_ylim(0, 1.05)
+        ax.grid(alpha=0.3, lw=0.5)
+        ax.tick_params(labelsize=7)
+        ax.legend(fontsize=6.5, frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.24), ncol=2)
+    axes[0][0].set_ylabel("concept rate / relative quality", fontsize=8)
+    fig.subplots_adjust(bottom=0.36, top=0.9, wspace=0.1)
     return fig

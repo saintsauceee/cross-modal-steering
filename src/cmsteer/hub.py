@@ -58,6 +58,20 @@ def fetch(model: str, parts=("scores", "vectors"), local_dir: str | Path | None 
     return local
 
 
+def fetch_examples(models=MODELS, concept: str = "emotion", prompt_idx: int = 0) -> None:
+    """The few files the example figures need: one prompt's middle-range images (Figure 4a) and the first image
+    minimal pair of every concept (Figure 6)."""
+    from huggingface_hub import snapshot_download
+
+    for m in models:
+        patterns = [f"generations/images/{concept}/{concept}_*_mid*_p{prompt_idx:02d}.png",
+                    f"generations/images/{concept}/{concept}_baseline*_p{prompt_idx:02d}.png"]
+        snapshot_download(repo_id(m), repo_type="dataset", local_dir=data_root() / m, allow_patterns=patterns)
+    snapshot_download(repo_id("minimal-pairs"), repo_type="dataset", local_dir=data_root() / "minimal-pairs",
+                      allow_patterns=[f"img/{c}/000/*" for c in ("emotion", "age", "cleanness", "chaos", "size",
+                                                                "near_far", "spatial_lr", "color")])
+
+
 def fetch_minimal_pairs(modality: str = "txt", concepts=None, local_dir: str | Path | None = None) -> Path:
     """Download the minimal pairs: modality "txt" (small JSON files) or "img" (per pair a baseline and its two edits,
     1024 px PNGs)."""

@@ -93,3 +93,50 @@ def recovery_by_model(scores: pd.DataFrame, **kw) -> pd.DataFrame:
     """recovery_table for every model in a multi-model score table."""
     return pd.concat([recovery_table(g, **kw).assign(model=m) for m, g in scores.groupby("model", sort=False)],
                      ignore_index=True)
+
+
+def load_quality(run: str | Path, kind: str) -> pd.DataFrame | None:
+    """Quality scores of a run, as concept, quadrant, config, alpha, prompt_idx, score (baselines: quadrant
+    "baseline"). kind "fluency" reads scores/fluency_scores.csv, or the release's scores/axbench_scores.csv (its F
+    column); kind "coherence" reads scores/coherence_scores.csv. None when the run has no such scores."""
+    run = Path(run)
+    p = run / "scores" / f"{kind}_scores.csv"
+    if p.exists():
+        df = pd.read_csv(p)
+    elif kind == "fluency" and (run / "scores" / "axbench_scores.csv").exists():
+        df = pd.read_csv(run / "scores" / "axbench_scores.csv").rename(columns={"F": "score"})
+    else:
+        return None
+    df["config"] = df["config"].replace(CONFIG_ALIASES)
+    return df[["concept", "quadrant", "config", "alpha", "prompt_idx", "score"]].dropna(subset=["score"])
+
+
+def load_dreamsim(run: str | Path) -> pd.DataFrame | None:
+    p = Path(run) / "scores" / "dreamsim_scores.csv"
+    if not p.exists():
+        return None
+    df = pd.read_csv(p)
+    df["config"] = df["config"].replace(CONFIG_ALIASES)
+    return df
+
+
+def strength(df: pd.DataFrame) -> pd.Series:
+    """|alpha| divided by the largest |alpha| of each setting, rounded to one decimal (the normalized strength)."""
+    top = df.groupby("quadrant")["alpha"].transform(lambda a: a.abs().max())
+    return (df["alpha"].abs() / top).round(1)
+
+
+def quality_vs_strength(scores: pd.DataFrame, quality: pd.DataFrame, config: str = "mid") -> pd.DataFrame:
+    """Per setting and normalized strength: concept rate and quality relative to the unsteered outputs, for one
+    model at one layer configuration (paper Figure 8). The row at strength 0 is (0, 1) by definition."""
+    base = quality[quality.quadrant == "baseline"]["score"].mean()
+    q = quality[(quality.quadrant != "baseline") & (quality.config == config)].copy()
+    s = scores[scores.config == config].copy()
+    q["r"], s["r"] = strength(q), strength(s)
+    rows = []
+    for quad in sorted(set(q.quadrant) & set(s.quadrant)):
+        cr = s[s.quadrant == quad].groupby("r")["correct"].mean()
+        ql = q[q.quadrant == quad].groupby("r")["score"].mean() / base
+        rows.append((quad, 0.0, 0.0, 1.0))
+        rows += [(quad, r, cr[r], ql[r]) for r in cr.index if r in ql.index]
+    return pd.DataFrame(rows, columns=["quadrant", "strength", "concept_rate", "quality"])

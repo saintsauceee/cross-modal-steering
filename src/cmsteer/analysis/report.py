@@ -10,16 +10,18 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pandas as pd
+
 from cmsteer.analysis import figures, tables
 from cmsteer.analysis.geometry import layer_cosines
-from cmsteer.analysis.metrics import load_release
+from cmsteer.analysis.metrics import load_dreamsim, load_quality, load_release, quality_vs_strength
 from cmsteer.config import load_config
 from cmsteer.vectors import load_vector
 
 GEOMETRY_CONCEPTS = ["emotion", "age", "cleanness", "chaos", "size", "near_far", "color"]   # spatial excluded (§3.4)
 
 
-def make_all(root: str | Path, out: str | Path, models=("uniar", "emu35", "liquid")) -> dict:
+def make_all(root: str | Path, out: str | Path, models=("uniar", "emu35", "liquid"), pairs_dir=None) -> dict:
     root, out = Path(root), Path(out)
     out.mkdir(parents=True, exist_ok=True)
     scores = load_release(models, root)
@@ -59,6 +61,34 @@ def make_all(root: str | Path, out: str | Path, models=("uniar", "emu35", "liqui
             save_fig(f"fig4_images_emotion_{m}", figures.image_strips(root / m, "emotion", 0))
         except FileNotFoundError:
             pass
+
+    # Figure 4 (b): text samples; Figure 6: minimal pairs; Figure 7: DreamSim; Figure 8: quality vs concept rate
+    for m in models:
+        if (root / m / "generations" / "sweep_text.csv").exists():
+            t = tables.text_samples(root / m, "emotion")
+            if not t.empty:
+                save_table(f"fig4b_text_samples_emotion_{m}", t.set_index(["setting", "alpha"]))
+    if pairs_dir is not None and Path(pairs_dir).is_dir():
+        try:
+            save_fig("fig6_minimal_pairs", figures.minimal_pairs(pairs_dir, concepts))
+        except FileNotFoundError:
+            pass
+    ds = {m: d for m in models if (d := load_dreamsim(root / m)) is not None}
+    if ds:
+        save_fig("fig7_dreamsim", figures.dreamsim_curves(ds))
+    parts = []
+    for m in models:
+        s = scores[scores.model == m]
+        for kind in ("fluency", "coherence"):
+            q = load_quality(root / m, kind)
+            if q is not None and "mid" in set(s["config"]):
+                want = ("txt2txt", "img2txt") if kind == "fluency" else ("img2img", "txt2img")
+                t = quality_vs_strength(s[s.quadrant.isin(want)], q, "mid")
+                parts.append(t.assign(model=m))
+    if parts:
+        avg = pd.concat(parts).groupby(["quadrant", "strength"])[["concept_rate", "quality"]].mean().reset_index()
+        save_table("fig8_quality_vs_concept_rate", avg.set_index(["quadrant", "strength"]))
+        save_fig("fig8_quality_vs_concept_rate", figures.quality_curves(avg))
 
     def with_vectors(m, cs):                               # concepts whose two vectors are both there
         return [c for c in cs if all((root / m / "vectors" / c / f"{k}.pt").exists() for k in ("txt", "img"))]

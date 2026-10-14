@@ -60,3 +60,29 @@ def cosine_vs_recovery(scores: pd.DataFrame, vectors_dirs: dict, layer_ranges: d
     both = both.mean(axis=1).rename("recovery").reset_index().merge(cos, on=["model", "concept", "config"]).dropna()
     corr.append({"model": "all", "direction": "mean of both", **correlate(both["cos"], both["recovery"])})
     return pts, pd.DataFrame(corr)
+
+
+def text_samples(run, concept: str, prompt_idx: int = 0, config: str = "mid", steps=(-2, 0, 2),
+                 quadrants=("txt2txt", "img2txt"), max_chars: int | None = 300) -> pd.DataFrame:
+    """Figure 4 (b): one prompt's text outputs at a few strengths, one row per setting. `steps` index the strength
+    grid from the baseline (0), e.g. 2 = the second positive strength."""
+    from pathlib import Path
+
+    from cmsteer.config import CONFIG_ALIASES
+    df = pd.read_csv(Path(run) / "generations" / "sweep_text.csv")
+    df["config"] = df["config"].replace(CONFIG_ALIASES)
+    df = df[(df.concept == concept) & (df.prompt_idx == prompt_idx) & (df.config == config)]
+    rows = []
+    for q in quadrants:
+        g = df[df.quadrant == q].sort_values("alpha").reset_index(drop=True)
+        if g.empty:
+            continue
+        zero = int((g["alpha"] == 0).idxmax())
+        for s in steps:
+            if 0 <= zero + s < len(g):
+                r = g.iloc[zero + s]
+                text = str(r["output"]).replace("\n", " ")
+                if max_chars and len(text) > max_chars:
+                    text = text[:max_chars] + " [...]"
+                rows.append({"setting": q, "alpha": r["alpha"], "output": text})
+    return pd.DataFrame(rows)
