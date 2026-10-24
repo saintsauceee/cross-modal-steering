@@ -3,6 +3,11 @@
 Code for **"Cross-Modal Steering Vectors Exist Across Both Image and Text Generation"**: extract steering vectors from
 text or image minimal pairs and apply them to text and image generation in UniAR, Emu3.5 and Liquid.
 
+![Steering vectors extracted from one modality transfer to the other, zero-shot.](assets/teaser.png)
+
+A steering vector extracted entirely from one modality steers generation both within that modality and,
+without any adaptation, in the other.
+
 ## Install
 
 ```bash
