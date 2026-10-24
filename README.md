@@ -1,4 +1,4 @@
-# cross-modal-steering
+# Cross-modal Steering
 
 Code for **"Cross-Modal Steering Vectors Exist Across Both Image and Text Generation"**: extract steering vectors from
 text or image minimal pairs and apply them to text and image generation in UniAR, Emu3.5 and Liquid.
