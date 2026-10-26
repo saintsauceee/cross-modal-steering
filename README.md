@@ -123,7 +123,17 @@ runs/<model>/
   judge/concept-rate_scores.csv             concept, quadrant, config, alpha, prompt_idx, verdict, correct
 ```
 
-The released data has the same layout: one Hugging Face dataset per model, plus one for the minimal pairs.
+The released data has the same layout — one Hugging Face dataset per model, plus one for the minimal pairs:
+
+| dataset | contents |
+|---|---|
+| [`saintsauce/unified-vlm-steering-uniar`](https://huggingface.co/datasets/saintsauce/unified-vlm-steering-uniar) | UniAR: vectors, generations, images, judge verdicts and scores, prompts |
+| [`saintsauce/unified-vlm-steering-emu35`](https://huggingface.co/datasets/saintsauce/unified-vlm-steering-emu35) | Emu3.5, same layout |
+| [`saintsauce/unified-vlm-steering-liquid`](https://huggingface.co/datasets/saintsauce/unified-vlm-steering-liquid) | Liquid, same layout |
+| [`saintsauce/unified-vlm-steering-minimal-pairs`](https://huggingface.co/datasets/saintsauce/unified-vlm-steering-minimal-pairs) | the minimal pairs every steering vector is extracted from |
+
+`cmsteer` fetches these on demand (`cmsteer results`, or `sweep --vectors release`). Set `CMSTEER_HF_NAMESPACE`
+to read from a mirror and `CMSTEER_DATA` to move the cache (default `~/.cache/cmsteer`).
 
 ## License
 
